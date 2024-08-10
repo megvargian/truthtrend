@@ -9,6 +9,7 @@
 
 get_header(); ?>
 
+
 	<section class="page_404 ">
 		<div class="container">
 			<div class="text-center">
