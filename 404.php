@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section class="page_404">
+	<section class="page_404 ">
 		<div class="container">
 			<div class="text-center">
 				<div class="title_404">
@@ -23,7 +23,7 @@ get_header(); ?>
 						<?php echo __('Go Back to Homepage', '404')?>
 					</div>
 				</a>
-			</div>	
+			</div>
 		</div>
 	</section>
 
