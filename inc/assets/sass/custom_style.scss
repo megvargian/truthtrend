@@ -152,6 +152,9 @@ body.hide_scroll{
     transform: translateY(100px);
     opacity: 0;
 }
+html{
+	direction: rtl !important;
+}
 // header section
 .header-container{
 	font-family: $lalezar-regular;

@@ -208,6 +208,10 @@ body.hide_scroll {
   opacity: 0;
 }
 
+html {
+  direction: rtl !important;
+}
+
 .header-container {
   font-family: "lalezar-regular";
   font-weight: 700;
