@@ -11,7 +11,7 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="ar">
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,13 +65,18 @@ $current_language = apply_filters('wpml_current_language', NULL);
 			<div class="container d-none d-lg-block">
                 <div class="row">
                     <ul class="w-100 d-flex justify-content-between align-center">
-                        <li class="parent-switch">
-                            <div class='toggle <?php if($current_language === 'en'){ echo 'toggle-on';}?>' id='switch'>
+                        <!-- <li class="parent-switch">
+                            <div class='toggle <?php //if($current_language === 'en'){ echo 'toggle-on';}?>' id='switch'>
                                 <div class='toggle-text-off'>AR</div>
                                 <div class='glow-comp'></div>
                                 <div class='toggle-button'></div>
                                 <div class='toggle-text-on'>EN</div>
                             </div>
+                        </li> -->
+                        <li>
+                            <svg class="cusrsor-pointer" data-bs-toggle="modal" data-bs-target="#search" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                                <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                            </svg>
                         </li>
                         <?php
                             foreach($header_fields as $key => $menu_item){
@@ -80,7 +85,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                         ?>
                             <li id="logo-main">
                                 <a href="<?php echo $menu_item['url']; ?>">
-                                    <img class="logo" src="<?php echo $menu_item['general_image']; ?>" alt="naqd-logo">
+                                    <img class="logo" src="<?php echo $menu_item['general_image']; ?>" alt="truthtrend">
                                 </a>
                             </li>
                         <?php
@@ -90,11 +95,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                             <a href="<?php echo $menu_item['url'] ?>"><?php echo $menu_item['label']; ?></a>
                         </li>
                         <?php } } ?>
-                        <li>
-                            <svg class="cusrsor-pointer" data-bs-toggle="modal" data-bs-target="#search" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                                <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
-                            </svg>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -135,10 +136,10 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                             </div>
                                         </a>
                             <?php }} ?>
-                            <a class="d-block mb-3 page_font animated_menu_el" href="<?php echo get_page_link(291) ?>">
+                            <!-- <a class="d-block mb-3 page_font animated_menu_el" href="<?php echo get_page_link(291) ?>">
                                 <div class="menu_item">
                                     <div class="parent-switch">
-                                        <div class='toggle <?php if($current_language === 'en'){ echo 'toggle-on';}?>' id='switch'>
+                                        <div class='toggle <?php //if($current_language === 'en'){ echo 'toggle-on';}?>' id='switch'>
                                             <div class='toggle-text-off'>AR</div>
                                             <div class='glow-comp'></div>
                                             <div class='toggle-button'></div>
@@ -146,7 +147,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -161,15 +162,15 @@ $current_language = apply_filters('wpml_current_language', NULL);
 <?php } ?>
 <script>
     jQuery(document).ready(function($) {
-        $('.toggle').click(function(e){
-            e.preventDefault();
-            $(this).toggleClass('toggle-on');
-            if($(this).hasClass('toggle-on')){
-                window.location.href = 'https://naqd.media/en/'
-            }else{
-                window.location.href = 'https://naqd.media/'
-            }
-        });
+        // $('.toggle').click(function(e){
+        //     e.preventDefault();
+        //     $(this).toggleClass('toggle-on');
+        //     if($(this).hasClass('toggle-on')){
+        //         window.location.href = 'https://naqd.media/en/'
+        //     }else{
+        //         window.location.href = 'https://naqd.media/'
+        //     }
+        // });
         $('.menu_mobile_nav').click(function(event) {
             $(this).toggleClass('active');
             $('html, body').toggleClass('hide_scroll');
