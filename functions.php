@@ -138,15 +138,15 @@ function wp_bootstrap_starter_scripts()
     if (is_front_page()) {
         // wp_enqueue_style( 'animate_headlines', get_template_directory_uri() . '/inc/assets/css/animate_headlines.css' );
     }
-    $current_language = apply_filters('wpml_current_language', NULL);
-    if($current_language === 'ar'){
+    // $current_language = apply_filters('wpml_current_language', NULL);
+    // if($current_language === 'ar'){
         wp_enqueue_style('custom_style_rtl', get_template_directory_uri() . '/inc/assets/css/rtl.css', array(), '1.39');
         wp_enqueue_style('responsive_style_rtl', get_template_directory_uri() . '/inc/assets/css/responsive_rtl.css', array(), '1.41');
 
-    } else{
-        wp_enqueue_style('custom_style', get_template_directory_uri() . '/inc/assets/css/custom_style.css', array(), '1.39');
-        wp_enqueue_style('responsive_style', get_template_directory_uri() . '/inc/assets/css/responsive.css', array(), '1.41');
-    }
+    // } else{
+    //     wp_enqueue_style('custom_style', get_template_directory_uri() . '/inc/assets/css/custom_style.css', array(), '1.39');
+    //     wp_enqueue_style('responsive_style', get_template_directory_uri() . '/inc/assets/css/responsive.css', array(), '1.41');
+    // }
 
     wp_enqueue_script('jquery');
 
