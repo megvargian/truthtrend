@@ -194,8 +194,11 @@ body.hide_scroll{
 				width: 100vw;
 				.sub-div{
 					.sub-menu-list{
+						li:first-child{
+							margin-right: 1.5rem;
+						}
 						.sub-menu-link{
-							font-size: .8rem;
+							font-size: .7rem;
 							margin-bottom: 13px;
 							padding: 0;
 							font-weight: 300;

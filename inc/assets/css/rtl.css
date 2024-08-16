@@ -247,8 +247,11 @@ body.hide_scroll {
   display: flex;
   width: 100vw;
 }
+.header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list li:first-child {
+  margin-right: 1.5rem;
+}
 .header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list .sub-menu-link {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-bottom: 13px;
   padding: 0;
   font-weight: 300;
