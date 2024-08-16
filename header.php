@@ -61,7 +61,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
         </div>
     </div>
 	<header id="masthead" class="header-container" role="banner">
-		<nav>
+		<nav class="w-100">
 			<div class="container d-none d-lg-block">
                 <div class="row">
                     <ul class="w-100 d-flex justify-content-start align-center">

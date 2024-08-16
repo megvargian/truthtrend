@@ -218,9 +218,11 @@ body.hide_scroll{
 }
 
 .header-container.active{
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 12;
+	background-color: #fff;
+	width: 100%;
 }
 .parent-switch{
 	position: relative;
