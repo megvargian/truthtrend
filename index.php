@@ -38,7 +38,14 @@ get_header();
                 clickable: true,
             },
         });
-
+        var swiper = new Swiper(".firstSwiperDesktop", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+        });
     })
 </script>
 <?
