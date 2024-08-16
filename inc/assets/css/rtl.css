@@ -254,7 +254,6 @@ body.hide_scroll {
   font-size: 0.7rem;
   margin-bottom: 13px;
   padding: 0;
-  font-weight: 300;
   text-align: right;
 }
 .header-container ul .menu-item-has-child:hover .sub-full-menu {
