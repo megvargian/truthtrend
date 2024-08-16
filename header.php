@@ -82,9 +82,15 @@ $current_language = apply_filters('wpml_current_language', NULL);
                             </li>
                         <?php } else if ($menu_item['has_child']){ ?>
                             <li class="menu-item-has-child">
-                                <a href="<?php echo $menu_item['url']; ?>">
-                                    <?php echo $menu_item['label']; ?>
-                                </a>
+                                <?php if($menu_item['url']){ ?>
+                                    <a href="<?php echo $menu_item['url']; ?>">
+                                        <?php echo $menu_item['label']; ?>
+                                    </a>
+                                <?php } else { ?>
+                                    <button>
+                                        <?php echo $menu_item['label']; ?>
+                                    </button>
+                                <?php } ?>
                                 <div class="sub-full-menu">
                                     <div class="container">
                                         <div class="row">
@@ -153,19 +159,44 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                                 <?php echo $menu_item['label']?>
                                             </div>
                                         </a>
-                            <?php }} ?>
-                            <!-- <a class="d-block mb-3 page_font animated_menu_el" href="<?php echo get_page_link(291) ?>">
-                                <div class="menu_item">
-                                    <div class="parent-switch">
-                                        <div class='toggle <?php //if($current_language === 'en'){ echo 'toggle-on';}?>' id='switch'>
-                                            <div class='toggle-text-off'>AR</div>
-                                            <div class='glow-comp'></div>
-                                            <div class='toggle-button'></div>
-                                            <div class='toggle-text-on'>EN</div>
+                            <?php } else if($menu_item['has_child']){
+                                    $count++;
+                            ?>
+                                <li>
+                                    <div class="accordion" id="accordionExample-header">
+                                        <div class="accordion-item" style="border: none;">
+                                            <h2 class="accordion-header mt-0"
+                                                id="headingOne-header-<?php echo $count;?>">
+                                                <button
+                                                    class="accordion-button d-block mb-3 page_font animated_menu_el collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne-header-<?php echo $count; ?>"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapseOne-header-<?php echo $count; ?>">
+                                                    <?php echo $menu_item['label']; ?>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne-header-<?php echo $count; ?>"
+                                                class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne-header-<?php echo $count;?>"
+                                                data-bs-parent="#accordionExample-header">
+                                                <div class="accordion-body">
+                                                    <ul class="sub-menus-header">
+                                                        <?php foreach($menu_item['sub_items'] as $sub_menu_items){ ?>
+                                                        <li class="mb-3">
+                                                            <a
+                                                                href="<?php echo $sub_menu_items['sub_item_url']; ?>">
+                                                                <?php echo $sub_menu_items['sub_item_text']; ?>
+                                                            </a>
+                                                        </li>
+                                                        <?php } ?>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a> -->
+                                </li>
+                            <?php }} ?>
                         </div>
                     </div>
                 </div>
