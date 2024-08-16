@@ -286,6 +286,9 @@ body.hide_scroll {
 .header-container .sub-menus-header button {
   font-size: 18px !important;
 }
+.header-container .sub-menus-header li:first-child {
+  margin-right: 1.5rem;
+}
 
 .header-container.active {
   position: fixed;
