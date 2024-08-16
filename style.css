@@ -223,3 +223,9 @@ th {
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'alexandria-regular';
+	src:  url('inc/assets/fonts/alexandria-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

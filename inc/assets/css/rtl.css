@@ -77,7 +77,7 @@ p {
 
 body {
   color: #000;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   background-color: #fff;
   overflow: auto;
   overflow-x: hidden !important;
@@ -209,7 +209,7 @@ body.hide_scroll {
 }
 
 .header-container {
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 700;
   text-align: left;
   letter-spacing: 0;
@@ -406,56 +406,56 @@ body.hide_scroll {
 
 h1 {
   color: #000;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 4rem;
 }
 
 h2 {
   color: #000;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 4rem;
 }
 
 h3 {
   color: #fff;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 3rem;
 }
 
 h4 {
   color: #000;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 2.5rem;
 }
 
 h5 {
   color: #000;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 1.5rem;
 }
 
 p {
   color: #000;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 1.2rem;
 }
 
 a {
   color: #000;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
   font-weight: 600;
   font-size: 1.2rem;
 }
 
 .a-h3 {
   color: #fff;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 3rem;
   display: block;
@@ -463,7 +463,7 @@ a {
 
 header a {
   font-size: 1.7rem;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
 }
 header a:hover {
   color: #FD4400;
@@ -655,7 +655,7 @@ section {
 .main_footer_section .first-section li a {
   font-size: 2rem;
   color: #fff;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
 }
 .main_footer_section .first-section li:first-child {
@@ -671,7 +671,7 @@ section {
 .main_footer_section .second-section li a {
   font-size: 2rem;
   color: #fff;
-  font-family: "lalezar-regular";
+  font-family: "alexandria-regular";
   font-weight: 400;
 }
 .main_footer_section .second-section li:first-child {
@@ -800,7 +800,7 @@ section {
   margin-right: 2rem;
 }
 .single-post-page .content p {
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
 }
 .single-post-page .current_author img {
   width: 100px;
@@ -856,19 +856,19 @@ section {
 
 .about-us h1 {
   color: #FD4400;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
   font-size: 40px;
   text-align: center;
 }
 .about-us p {
   font-size: 30px;
   font-weight: 400;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
 }
 
 .contact_us h1 {
   color: #FD4400;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
   font-size: 40px;
   text-align: center;
 }
@@ -877,7 +877,7 @@ section {
   text-align: right;
   border-radius: 23px;
   padding: 1rem 0.8rem;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
   color: #DADADA;
   width: 100%;
 }
@@ -886,7 +886,7 @@ section {
   text-align: right;
   border-radius: 23px;
   padding: 1rem 0.8rem;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
   color: #DADADA;
   width: 100%;
 }
@@ -895,7 +895,7 @@ section {
   text-align: center;
   border-radius: 23px;
   padding: 0.8rem 4rem;
-  font-family: "cairo-regular";
+  font-family: "alexandria-regular";
   color: #fff;
   background-color: #FD4400;
   width: fit-content;
