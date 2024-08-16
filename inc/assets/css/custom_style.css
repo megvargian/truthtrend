@@ -224,7 +224,7 @@ html {
 }
 .header-container ul #logo-main {
   margin: 0.8rem 1.5rem;
-  margin-right: auto;
+  margin-right: auto !important;
 }
 .header-container ul li:first-child {
   margin-left: 0;
