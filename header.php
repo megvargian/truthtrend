@@ -153,7 +153,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                     <div class="menu_on_mobile_inner_wrapper" style="position: relative;">
                         <div>
                             <?php foreach($header_fields as $key => $menu_item){
-                                    if($menu_item['general_image'] == '' && $menu_item['has_child'] != ''){?>
+                                    if($menu_item['general_image'] == '' && $menu_item['has_child'] == false){?>
                                         <a class="d-block mb-3 page_font animated_menu_el" href="<?php echo $menu_item['url'] ?>">
                                             <div class="menu_item <?php if(is_page(6) || is_page(1612)){ echo 'active_page';  }else{ echo 'line_animation' ; } ?>">
                                                 <?php echo $menu_item['label']?>
