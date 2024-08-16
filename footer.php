@@ -61,14 +61,14 @@ $footer_logo = $getGeneralFields['footer_logo'];
                     <div class="row pt-lg-0 pt-4">
                         <div class="col-lg-3 col-0"></div>
                         <div class="col-lg-9 col-12">
-                            <div class="subscription">
+                            <!-- <div class="subscription">
                                 <h5 class="text-white pb-3">
-                                    <?php echo $getGeneralFields['subscription_on_youtube']['title']; ?>
+                                    <?php //echo $getGeneralFields['subscription_on_youtube']['title']; ?>
                                 </h5>
-                                <a href="<?php echo $getGeneralFields['subscription_on_youtube']['button_url']; ?>" class="main_button">
-                                    <?php echo $getGeneralFields['subscription_on_youtube']['button_text']; ?>
+                                <a href="<?php //echo $getGeneralFields['subscription_on_youtube']['button_url']; ?>" class="main_button">
+                                    <?php //echo $getGeneralFields['subscription_on_youtube']['button_text']; ?>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
