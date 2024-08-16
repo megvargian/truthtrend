@@ -180,6 +180,11 @@ body.hide_scroll{
 		.menu-item-has-child{
 			position: relative;
 			height: fit-content;
+			.button-no-redirect{
+				background-color: transparent;
+				border: none;
+				outline: none;
+			}
 			.sub-full-menu{
 				visibility: hidden;
 				opacity: 0;

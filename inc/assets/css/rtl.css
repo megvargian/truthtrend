@@ -234,6 +234,11 @@ body.hide_scroll {
   position: relative;
   height: fit-content;
 }
+.header-container ul .menu-item-has-child .button-no-redirect {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 .header-container ul .menu-item-has-child .sub-full-menu {
   visibility: hidden;
   opacity: 0;

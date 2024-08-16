@@ -87,7 +87,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                         <?php echo $menu_item['label']; ?>
                                     </a>
                                 <?php } else { ?>
-                                    <button>
+                                    <button class="button-no-redirect">
                                         <?php echo $menu_item['label']; ?>
                                     </button>
                                 <?php } ?>
