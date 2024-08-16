@@ -30,8 +30,9 @@ get_header();
             },
         });
         var swiper = new Swiper(".FirstSwiperMobile", {
-            slidesPerView: 1.5,
+            slidesPerView: 2,
             spaceBetween: 20,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
@@ -40,7 +41,7 @@ get_header();
         });
         var swiper = new Swiper(".firstSwiperDesktop", {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
             loop: true,
             autoplay: {
                 delay: 5000,

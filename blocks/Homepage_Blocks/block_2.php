@@ -19,25 +19,7 @@ $posts = $block2_fields['posts'];
                 </a>
             </div>
         </div>
-        <div class="row d-none d-lg-flex">
-            <?php
-                foreach($posts as $post){
-                    $post_custom_fields = get_fields($post['post'] -> ID);
-            ?>
-                <div class="col-4">
-                    <div>
-                        <a href="<?php echo get_permalink($post['post'] -> ID) ?>">
-                            <img class="w-100 h-100" src="<?php echo $post_custom_fields['images']['desktop_image']; ?>" alt="">
-                            <h5 class="mb-3"><?php echo $post['post'] -> post_title; ?></h5>
-                        </a>
-                        <a href="<?php echo get_permalink($post_custom_fields['author'] -> ID); ?>">
-                           <?php echo get_the_title($post_custom_fields['author'] -> ID); ?>
-                        </a>
-                    </div>
-                </div>
-            <?php } ?>
-        </div>
-        <div class="row d-block d-lg-none">
+        <div class="row">
             <div class="swiper FirstSwiperMobile">
                 <div class="swiper-wrapper">
                     <?php
@@ -47,8 +29,6 @@ $posts = $block2_fields['posts'];
                     <div class="swiper-slide">
                         <div>
                             <a href="<?php echo get_permalink($post['post'] -> ID) ?>">
-                                <img class="w-100 h-100 d-none d-sm-block d-lg-none " src="<?php echo $post_custom_fields['images']['tablet_image'] ?>" alt="">
-                                <img class="w-100 h-100 d-block d-sm-none" src="<?php echo $post_custom_fields['images']['mobile_image'] ?>" alt="">
                                 <h5 class="mb-3"><?php echo $post['post'] -> post_title ?></h5>
                             </a>
                             <a href="<?php echo get_permalink($post_custom_fields['author'] -> ID); ?>">
