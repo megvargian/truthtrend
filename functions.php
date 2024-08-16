@@ -140,7 +140,7 @@ function wp_bootstrap_starter_scripts()
     }
     // $current_language = apply_filters('wpml_current_language', NULL);
     // if($current_language === 'ar'){
-        wp_enqueue_style('custom_style_rtl', get_template_directory_uri() . '/inc/assets/css/rtl.css', array(), '1.39');
+        wp_enqueue_style('custom_style_rtl', get_template_directory_uri() . '/inc/assets/css/rtl.css', array(), '1.41');
         wp_enqueue_style('responsive_style_rtl', get_template_directory_uri() . '/inc/assets/css/responsive_rtl.css', array(), '1.41');
 
     // } else{
