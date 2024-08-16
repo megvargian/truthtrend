@@ -19,14 +19,14 @@ if($customFields_main_post['youtube_url']){
                         <?php if($isYoutube){ ?>
                             <a class="position-relative" href="<?php echo $customFields_main_post['youtube_url']; ?>">
                                 <!-- <h2><?php //echo $block1_fields['main_post'] -> post_title; ?></h2> -->
-                                <img class="w-100 h-100 d-none d-sm-block d-lg-none image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
+                                <img class="w-100 h-100 d-none d-sm-block image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
                                 <img class="w-100 h-100 d-block d-sm-none image-darker" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                                 <img class="play" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/play-48.ico" alt="play">
                             </a>
                         <?php }else{?>
                             <a class="position-relative" href="<?php echo get_permalink($block1_fields['main_post'] -> ID) ?>">
                                 <!-- <h2><?php // echo $block1_fields['main_post'] -> post_title; ?></h2> -->
-                                <img class="w-100 h-100 d-none d-sm-block d-lg-none" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
+                                <img class="w-100 h-100 d-none d-sm-block" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
                                 <img class="w-100 h-100 d-block d-sm-none" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                             </a>
                         <?php } ?>
@@ -35,14 +35,14 @@ if($customFields_main_post['youtube_url']){
                         <?php if($isYoutube){ ?>
                             <a class="position-relative" href="<?php echo $customFields_main_post['youtube_url']; ?>">
                                 <!-- <h2><?php //echo $block1_fields['main_post'] -> post_title; ?></h2> -->
-                                <img class="w-100 h-100 d-none d-sm-block d-lg-none image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
+                                <img class="w-100 h-100 d-none d-sm-block image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
                                 <img class="w-100 h-100 d-block d-sm-none image-darker" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                                 <img class="play" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/play-48.ico" alt="play">
                             </a>
                         <?php }else{?>
                             <a class="position-relative" href="<?php echo get_permalink($block1_fields['main_post'] -> ID) ?>">
                                 <!-- <h2><?php // echo $block1_fields['main_post'] -> post_title; ?></h2> -->
-                                <img class="w-100 h-100 d-none d-sm-block d-lg-none" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
+                                <img class="w-100 h-100 d-none d-sm-block" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
                                 <img class="w-100 h-100 d-block d-sm-none" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                             </a>
                         <?php } ?>
