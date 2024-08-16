@@ -220,6 +220,18 @@ body.hide_scroll{
 			}
 		}
 	}
+	.accordion-custom-button{
+		outline: none !important;
+		border: none !important;
+		background: transparent !important;
+		margin-bottom: 0 !important;
+	}
+	.accordion-custom-button:focus{
+		outline: none !important;
+		border: none !important;
+		background: transparent !important;
+		margin-bottom: 0 !important;
+	}
 }
 
 .header-container.active{

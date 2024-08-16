@@ -167,7 +167,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                         <h2 class="accordion-header mt-0"
                                             id="headingOne-header-<?php echo $count;?>">
                                             <button
-                                                class="accordion-button d-block mb-3 page_font animated_menu_el collapsed"
+                                                class="accordion-button accordion-custom-button text-center d-block mb-3 page_font animated_menu_el collapsed"
                                                 type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#collapseOne-header-<?php echo $count; ?>"
                                                 aria-expanded="true"

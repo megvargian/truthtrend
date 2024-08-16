@@ -266,6 +266,18 @@ body.hide_scroll {
   opacity: 1;
   z-index: 2;
 }
+.header-container .accordion-custom-button {
+  outline: none !important;
+  border: none !important;
+  background: transparent !important;
+  margin-bottom: 0 !important;
+}
+.header-container .accordion-custom-button:focus {
+  outline: none !important;
+  border: none !important;
+  background: transparent !important;
+  margin-bottom: 0 !important;
+}
 
 .header-container.active {
   position: fixed;
