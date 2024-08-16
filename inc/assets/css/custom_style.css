@@ -224,6 +224,7 @@ html {
 }
 .header-container ul #logo-main {
   margin: 0.8rem 1.5rem;
+  margin-right: auto;
 }
 .header-container ul li:first-child {
   margin-left: 0;
@@ -232,6 +233,35 @@ html {
   margin-right: 0;
   line-height: 1.2;
   cursor: pointer;
+}
+.header-container ul .menu-item-has-child {
+  position: relative;
+}
+.header-container ul .menu-item-has-child .sub-full-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: auto;
+  background-color: white;
+  padding: 40px 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+.header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list .sub-menu-link {
+  font-size: 0.8rem;
+  margin-bottom: 13px;
+  padding: 0;
+  font-weight: 300;
+  text-align: right;
+}
+.header-container ul .menu-item-has-child:hover .sub-full-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
 }
 
 .parent-switch {

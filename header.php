@@ -64,7 +64,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
 		<nav>
 			<div class="container d-none d-lg-block">
                 <div class="row">
-                    <ul class="w-100 d-flex justify-content-between align-center">
+                    <ul class="w-100 d-flex justify-content-start align-center">
                         <!-- <li class="parent-switch">
                             <div class='toggle <?php //if($current_language === 'en'){ echo 'toggle-on';}?>' id='switch'>
                                 <div class='toggle-text-off'>AR</div>
@@ -88,14 +88,40 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                     <img class="logo" src="<?php echo $menu_item['general_image']; ?>" alt="truthtrend">
                                 </a>
                             </li>
-                        <?php
-                            }else {
-                        ?>
-                        <li>
-                            <a href="<?php echo $menu_item['url'] ?>"><?php echo $menu_item['label']; ?></a>
-                        </li>
-                        <?php } } ?>
+                        <?php} else if ($menu_item['has_child']){ ?>
+                            <li class="menu-item-has-child">
+                                <a href="<?php echo $menu_item['url'] ?>">
+                                    <?php echo $menu_item['label']; ?>
+                                </a>
+                                <div class="sub-full-menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="sub-div">
+                                                    <!-- <div class="sub-label mb-3">
+                                                        <h5><?php // echo $single_menu['sub_menu_section']['left_side_menu_label'] ?></h5>
+                                                    </div> -->
+                                                    <ul class="sub-menu-list">
+                                                        <?php foreach($menu_item['sub_items'] as $sub_menu_items){ ?>
+                                                            <li class="sub-menu-link">
+                                                                <a href="<?php echo $sub_menu_items['url'] ?>">
+                                                                    <?php echo $sub_menu_items['text']; ?>
+                                                                </a>
+                                                            </li>
+                                                        <?php } ?>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 
+                        <?php} else {?>
+                            <li>
+                                <a href="<?php echo $menu_item['url'] ?>"><?php echo $menu_item['label']; ?></a>
+                            </li>
+                        <?php } } ?>
                     </ul>
                 </div>
             </div>
