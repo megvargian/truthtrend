@@ -217,6 +217,11 @@ body.hide_scroll{
 	}
 }
 
+.header-container.active{
+	position: sticky;
+	top: 0;
+	z-index: 12;
+}
 .parent-switch{
 	position: relative;
 	width: 75px;
@@ -426,8 +431,8 @@ section{
 	color: #fff !important;
 }
 .logo{
-	width: 7rem;
-	height: 7rem;
+	width: 5rem;
+	height: 5rem;
 	cursor: pointer;
 }
 .saperator_black{

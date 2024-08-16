@@ -262,6 +262,12 @@ body.hide_scroll {
   z-index: 2;
 }
 
+.header-container.active {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+}
+
 .parent-switch {
   position: relative;
   width: 75px;
@@ -479,8 +485,8 @@ section {
 }
 
 .logo {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   cursor: pointer;
 }
 
