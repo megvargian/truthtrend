@@ -88,9 +88,9 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                     <img class="logo" src="<?php echo $menu_item['general_image']; ?>" alt="truthtrend">
                                 </a>
                             </li>
-                        <?php} else if ($menu_item['has_child']){ ?>
+                        <?php } else if ($menu_item['has_child']){ ?>
                             <li class="menu-item-has-child">
-                                <a href="<?php echo $menu_item['url'] ?>">
+                                <a href="<?php echo $menu_item['url']; ?>">
                                     <?php echo $menu_item['label']; ?>
                                 </a>
                                 <div class="sub-full-menu">
@@ -104,7 +104,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                                     <ul class="sub-menu-list">
                                                         <?php foreach($menu_item['sub_items'] as $sub_menu_items){ ?>
                                                             <li class="sub-menu-link">
-                                                                <a href="<?php echo $sub_menu_items['url'] ?>">
+                                                                <a href="<?php echo $sub_menu_items['url']; ?>">
                                                                     <?php echo $sub_menu_items['text']; ?>
                                                                 </a>
                                                             </li>
@@ -117,7 +117,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                 </div>
                             </li>
 
-                        <?php} else {?>
+                        <?php } else {?>
                             <li>
                                 <a href="<?php echo $menu_item['url'] ?>"><?php echo $menu_item['label']; ?></a>
                             </li>
