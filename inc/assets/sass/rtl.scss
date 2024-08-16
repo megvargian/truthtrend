@@ -225,12 +225,22 @@ body.hide_scroll{
 		border: none !important;
 		background: transparent !important;
 		margin-bottom: 0 !important;
+		box-shadow: none !important;
 	}
 	.accordion-custom-button:focus{
 		outline: none !important;
 		border: none !important;
 		background: transparent !important;
 		margin-bottom: 0 !important;
+		box-shadow: none !important;
+	}
+	.sub-menus-header{
+		a{
+			font-size: 15px !important;
+		}
+		button{
+			font-size: 18px !important;
+		}
 	}
 }
 

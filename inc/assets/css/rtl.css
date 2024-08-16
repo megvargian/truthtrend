@@ -271,12 +271,20 @@ body.hide_scroll {
   border: none !important;
   background: transparent !important;
   margin-bottom: 0 !important;
+  box-shadow: none !important;
 }
 .header-container .accordion-custom-button:focus {
   outline: none !important;
   border: none !important;
   background: transparent !important;
   margin-bottom: 0 !important;
+  box-shadow: none !important;
+}
+.header-container .sub-menus-header a {
+  font-size: 15px !important;
+}
+.header-container .sub-menus-header button {
+  font-size: 18px !important;
 }
 
 .header-container.active {

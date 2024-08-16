@@ -182,12 +182,12 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                             <div class="accordion-body">
                                                 <ul class="sub-menus-header">
                                                     <?php foreach($menu_item['sub_items'] as $sub_menu_items){ ?>
-                                                    <li class="mb-3">
-                                                        <a
-                                                            href="<?php echo $sub_menu_items['sub_item_url']; ?>">
-                                                            <?php echo $sub_menu_items['sub_item_text']; ?>
-                                                        </a>
-                                                    </li>
+                                                        <li class="mb-3">
+                                                            <a
+                                                                href="<?php echo $sub_menu_items['sub_item_url']; ?>">
+                                                                <?php echo $sub_menu_items['sub_item_text']; ?>
+                                                            </a>
+                                                        </li>
                                                     <?php } ?>
                                                 </ul>
                                             </div>
