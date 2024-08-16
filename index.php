@@ -30,7 +30,7 @@ get_header();
             },
         });
         var swiper = new Swiper(".FirstSwiperMobile", {
-            slidesPerView: 2,
+            slidesPerView: 4,
             spaceBetween: 20,
             loop: true,
             pagination: {
