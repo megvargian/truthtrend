@@ -290,7 +290,7 @@ body.hide_scroll{
     width: 28px;
     bottom: 4px;
     right: 39px;
-    background-color: #FD4400;
+    background-color: #787CF0;
     border-radius: 19px;
     cursor: pointer;
     // -webkit-transition: all .3s .1s, width .1s, top .1s, bottom .1s;
@@ -421,7 +421,7 @@ header{
 		font-family: $alexandria-regular;
 	}
 	a:hover{
-		color: #FD4400;
+		color: #787CF0;
 	}
 }
 section{
@@ -429,7 +429,7 @@ section{
 }
 .main_button{
 	color: #fff;
-	background-color: #FD4400;
+	background-color: #787CF0;
 	border-radius: 30px;
 	border: none;
 	padding: .5rem 1.5rem;
@@ -454,7 +454,7 @@ section{
 	transform: translate(-50%, -50%);
 }
 .nav-link.active{
-	color: #FD4400 !important;
+	color: #787CF0 !important;
 }
 .nav-link{
 	background-color: transparent !important;
@@ -556,7 +556,7 @@ section{
 			cursor: pointer;
 		}
 		.swiper-pagination-bullet-active{
-			background-color: #FD4400;
+			background-color: #787CF0;
 		}
 	}
 }
@@ -564,16 +564,16 @@ section{
 	list-style-type: decimal;
 	margin-left: 10px;
 	li::marker{
-		color: #FD4400;
+		color: #787CF0;
 		font-size: 4rem;
 	}
 }
 .border-left-custom{
-	border-left: 2px solid #FD4400;
+	border-left: 2px solid #787CF0;
 	padding-left: 2rem;
 }
 .border-right-custom{
-	border-right: 2px solid #FD4400;
+	border-right: 2px solid #787CF0;
 	padding-right: 2rem;
 }
 // footer classes
@@ -726,7 +726,7 @@ section{
 	border: none;
 	background-color: transparent;
 	outline: none;
-	color: #FD4400;
+	color: #787CF0;
 	font-size: 2rem;
 	text-align: center;
 	width: fit-content;
@@ -771,17 +771,17 @@ section{
 		a{
 			background-color: transparent;
 			padding: .5rem 2rem;
-			border: 1px solid #FD4400;
+			border: 1px solid #787CF0;
 			border-radius: 23px;
 		}
 	}
 	.single-post-subscriptions{
 		input[type="email"]{
 			border-radius: 25px;
-			border: 1px solid #FD4400;
+			border: 1px solid #787CF0;
 		}
 		input[type="submit"]{
-			background-color: #FD4400 !important;
+			background-color: #787CF0 !important;
 		}
 	}
 }
@@ -820,7 +820,7 @@ section{
 
 .about-us{
 	h1{
-		color: #FD4400;
+		color: #787CF0;
 		font-family: $alexandria-regular;
 		font-size: 40px;
 		text-align: center;
@@ -833,13 +833,13 @@ section{
 }
 .contact_us{
 	h1{
-		color: #FD4400;
+		color: #787CF0;
 		font-family: $alexandria-regular;
 		font-size: 40px;
 		text-align: center;
 	}
 	input{
-		border: 1px solid #FD4400;
+		border: 1px solid #787CF0;
 		text-align: right;
 		border-radius: 23px;
 		padding: 1rem .8rem;
@@ -848,7 +848,7 @@ section{
 		width: 100%;
 	}
 	textarea{
-		border: 1px solid #FD4400;
+		border: 1px solid #787CF0;
 		text-align: right;
 		border-radius: 23px;
 		padding: 1rem .8rem;
@@ -863,7 +863,7 @@ section{
 		padding: .8rem 4rem;
 		font-family: $alexandria-regular;
 		color: #fff;
-		background-color: #FD4400;
+		background-color: #787CF0;
 		width: fit-content;
 	}
 	.wpcf7-spinner{
@@ -883,7 +883,7 @@ section{
 #progress-bar {
     height: 100%;
     width: 0;
-    background-color: #FD4400;
+    background-color: #787CF0;
     transition: width 0.1s;
 }
 .member, .author{
