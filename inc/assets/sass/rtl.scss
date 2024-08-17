@@ -927,13 +927,19 @@ section{
 	height: 500px;
 }
 .cusotm-header-position{
-	h2{
+	.middle-section{
 		position: absolute;
 		z-index: 12;
 		right: 2%;
 		top: 40%;
-		color: #fff;
-		font-size: 3rem;
+		h2{
+			color: #fff;
+			font-size: 3rem;
+		}
+		a{
+			color: #fff;
+			font-size: 1.5rem;
+		}
 	}
 }
 

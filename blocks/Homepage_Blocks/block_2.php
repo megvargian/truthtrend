@@ -10,7 +10,7 @@ $posts = $block2_fields['posts'];
         <div class="row saperator_black"></div>
     </div>
 </section>
-<section class="pt-2">
+<section class="pt-5">
     <div class="container">
         <!-- <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
             <div class="col-12">

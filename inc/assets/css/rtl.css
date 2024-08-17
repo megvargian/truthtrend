@@ -968,13 +968,19 @@ section {
   height: 500px;
 }
 
-.cusotm-header-position h2 {
+.cusotm-header-position .middle-section {
   position: absolute;
   z-index: 12;
   right: 2%;
   top: 40%;
+}
+.cusotm-header-position .middle-section h2 {
   color: #fff;
   font-size: 3rem;
+}
+.cusotm-header-position .middle-section a {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .custom-height-second-index {
