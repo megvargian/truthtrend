@@ -976,3 +976,7 @@ section {
   color: #fff;
   font-size: 3rem;
 }
+
+.custom-height-second-index {
+  height: 350px;
+}

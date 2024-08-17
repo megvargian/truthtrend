@@ -76,7 +76,7 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
                 <div class="swiper SecondIndexSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class="w-100 h-auto" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
+                            <img class="w-100 custom-height-second-index" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
                             <a href="<?php echo get_permalink($post_0 -> ID); ?>">
                                 <h2 class="mt-3"><?php echo $post_0 -> post_title ?></h2>
                             </a>
@@ -86,7 +86,7 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <img class="w-100 h-auto" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
+                            <img class="w-100 custom-height-second-index" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
                             <a href="<?php echo get_permalink($post_0 -> ID); ?>">
                                 <h2 class="mt-3"><?php echo $post_0 -> post_title ?></h2>
                             </a>
@@ -96,7 +96,7 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <img class="w-100 h-auto" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
+                            <img class="w-100 custom-height-second-index" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
                             <a href="<?php echo get_permalink($post_0 -> ID); ?>">
                                 <h2 class="mt-3"><?php echo $post_0 -> post_title ?></h2>
                             </a>
