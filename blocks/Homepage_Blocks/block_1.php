@@ -10,7 +10,7 @@ if($customFields_main_post['youtube_url']){
     $isYoutube = false;
 }
 ?>
-<section class="pt-0">
+<section class="pt-0 pb-2">
     <div class="container">
         <div class="row">
             <div class="swiper firstSwiperDesktop">
