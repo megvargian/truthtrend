@@ -43,9 +43,9 @@ get_header();
             slidesPerView: 1,
             spaceBetween: 0,
             loop: true,
-            autoplay: {
-                delay: 5000,
-            },
+            // autoplay: {
+            //     delay: 5000,
+            // },
         });
         var swiper = new Swiper(".SecondIndexSwiper", {
             slidesPerView: 1,
