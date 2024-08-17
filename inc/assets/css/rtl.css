@@ -493,7 +493,7 @@ section {
 }
 
 .image-darker {
-  filter: brightness(0.7);
+  filter: brightness(0.8);
 }
 
 .play {
@@ -957,4 +957,5 @@ section {
 
 .add-border-radius {
   border-radius: 15px;
+  height: 500px;
 }

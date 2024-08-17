@@ -10,7 +10,7 @@ if($customFields_main_post['youtube_url']){
     $isYoutube = false;
 }
 ?>
-<section>
+<section class="pt-0">
     <div class="container">
         <div class="row">
             <div class="swiper firstSwiperDesktop">
@@ -18,8 +18,8 @@ if($customFields_main_post['youtube_url']){
                     <div class="swiper-slide">
                         <?php if($isYoutube){ ?>
                             <a class="position-relative" href="<?php echo $customFields_main_post['youtube_url']; ?>">
-                                <div class="add-gradiant-main position-relative">
-                                    <!-- <h2><?php //echo $block1_fields['main_post'] -> post_title; ?></h2> -->
+                                <div class="position-relative cusotm-header-position">
+                                    <h2><?php echo $block1_fields['main_post'] -> post_title; ?></h2>
                                     <img class="w-100 add-border-radius d-none d-sm-block image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
                                     <img class="w-100 add-border-radius d-block d-sm-none image-darker" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                                     <img class="play" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/play-48.ico" alt="play">
@@ -27,10 +27,10 @@ if($customFields_main_post['youtube_url']){
                             </a>
                         <?php }else{?>
                             <a class="position-relative" href="<?php echo get_permalink($block1_fields['main_post'] -> ID) ?>">
-                                <div class="add-gradiant-main position-relative">
-                                    <!-- <h2><?php // echo $block1_fields['main_post'] -> post_title; ?></h2> -->
-                                    <img class="w-100 add-border-radius d-none d-sm-block" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
-                                    <img class="w-100 add-border-radius d-block d-sm-none" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
+                                <div class="position-relative cusotm-header-position">
+                                    <h2><?php echo $block1_fields['main_post'] -> post_title; ?></h2>
+                                    <img class="w-100 add-border-radius d-none d-sm-block image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
+                                    <img class="w-100 add-border-radius d-block d-sm-none image-darker" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                                 </div>
                             </a>
                         <?php } ?>
@@ -38,8 +38,8 @@ if($customFields_main_post['youtube_url']){
                     <div class="swiper-slide">
                         <?php if($isYoutube){ ?>
                             <a class="position-relative" href="<?php echo $customFields_main_post['youtube_url']; ?>">
-                                <div class="add-gradiant-main position-relative">
-                                    <!-- <h2><?php //echo $block1_fields['main_post'] -> post_title; ?></h2> -->
+                                <div class="position-relative cusotm-header-position">
+                                    <h2><?php echo $block1_fields['main_post'] -> post_title; ?></h2>
                                     <img class="w-100 add-border-radius d-none d-sm-block image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
                                     <img class="w-100 add-border-radius d-block d-sm-none image-darker" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                                     <img class="play" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/play-48.ico" alt="play">
@@ -47,10 +47,10 @@ if($customFields_main_post['youtube_url']){
                             </a>
                         <?php }else{?>
                             <a class="position-relative" href="<?php echo get_permalink($block1_fields['main_post'] -> ID) ?>">
-                                <div class="add-gradiant-main position-relative">
-                                    <!-- <h2><?php // echo $block1_fields['main_post'] -> post_title; ?></h2> -->
-                                    <img class="w-100 add-border-radius d-none d-sm-block" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
-                                    <img class="w-100 add-border-radius d-block d-sm-none" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
+                                <div class="position-relative cusotm-header-position">
+                                    <h2><?php echo $block1_fields['main_post'] -> post_title; ?></h2>
+                                    <img class="w-100 add-border-radius d-none d-sm-block image-darker" src="<?php echo $customFields_main_post['images']['tablet_image'] ?>" alt="">
+                                    <img class="w-100 add-border-radius d-block d-sm-none image-darker" src="<?php echo $customFields_main_post['images']['mobile_image'] ?>" alt="">
                                 </div>
                             </a>
                         <?php } ?>
