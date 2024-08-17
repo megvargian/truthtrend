@@ -549,9 +549,9 @@ section {
   top: 10%;
   right: 0;
   bottom: 10%;
-  height: 80%;
+  height: 100%;
   width: 1px; /* or 100px */
-  border-right: 1px solid #000;
+  border-left: 1px solid #000;
 }
 
 .white_seperator {

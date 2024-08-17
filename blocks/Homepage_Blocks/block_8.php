@@ -21,16 +21,6 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
             </div>
         </div>
         <div class="row gx-5 d-none d-lg-flex">
-            <div class="col-8">
-                <img class="w-100 h-auto" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
-                <a href="<?php echo get_permalink($post_0 -> ID); ?>">
-                    <h2 class="mt-3"><?php echo $post_0 -> post_title ?></h2>
-                </a>
-                <p><?php echo $post_0 -> post_excerpt; ?></p>
-                <a class="mt-4" href="<?php echo get_permalink($post_custom_fields_0['author'] -> ID); ?>">
-                    <?php echo get_the_title($post_custom_fields_0['author'] -> ID); ?>
-                </a>
-            </div>
             <div class="col-4">
                 <div class="row gx-5">
                     <div class="col-12 mb-4 horizontal-saperator-right-side">
@@ -41,7 +31,6 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
                         <a class="mt-2" href="<?php echo get_permalink($post_custom_fields_1['author'] -> ID); ?>" style="font-size: 1rem;">
                             <?php echo get_the_title($post_custom_fields_1['author'] -> ID); ?>
                         </a>
-                        <div class="saperator_black mt-3"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -55,6 +44,16 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="col-8">
+                <img class="w-100 h-auto" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
+                <a href="<?php echo get_permalink($post_0 -> ID); ?>">
+                    <h2 class="mt-3"><?php echo $post_0 -> post_title ?></h2>
+                </a>
+                <p><?php echo $post_0 -> post_excerpt; ?></p>
+                <a class="mt-4" href="<?php echo get_permalink($post_custom_fields_0['author'] -> ID); ?>">
+                    <?php echo get_the_title($post_custom_fields_0['author'] -> ID); ?>
+                </a>
             </div>
         </div>
         <div class="row d-block d-lg-none">
