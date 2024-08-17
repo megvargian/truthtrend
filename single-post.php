@@ -21,7 +21,9 @@ $args = array(
 $query = new WP_Query($args);
 $count = 0;
 $tags = get_the_tags(get_the_ID());
-$current_language = apply_filters('wpml_current_language', NULL);
+$post_url   = urlencode(get_permalink(get_the_ID()));
+$post_title = urlencode(get_the_title(get_the_ID()));
+$post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
 ?>
 <section class="single-post-page pt-3">
     <div class="container">
@@ -88,22 +90,22 @@ $current_language = apply_filters('wpml_current_language', NULL);
                             </div>
                             <div class="col-1">
                                 <div class="social_links_single_post">
-                                    <a href="<?php //echo $social_media['facebook_url'] ?>">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $post_url; ?>" target="_blank" rel="nofollow">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/facebook-black.svg" alt="facebook">
                                     </a>
-                                    <a href="<?php //echo $social_media['twitterx_url'] ?>">
+                                    <a href="https://twitter.com/intent/tweet?url=<?php echo $post_url; ?>&text=<?php echo $post_title; ?>" target="_blank" rel="nofollow">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/x-black.svg" alt="x">
                                     </a>
-                                    <a href="<?php //echo $social_media['youtube_url'] ?>">
+                                    <a href="https://pinterest.com/pin/create/button/?url=<?php echo $post_url; ?>&media=<?php echo $post_image; ?>&description=<?php echo $post_title; ?>" target="_blank" rel="nofollow">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/pinterest-black.svg" alt="pinterest">
                                     </a>
-                                    <a href="<?php //echo $social_media['instagram_url'] ?>">
+                                    <a href="https://api.whatsapp.com/send?text=<?php echo $post_title . ' ' . $post_url; ?>" target="_blank" rel="nofollow">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/whatsapp-black.svg" alt="whatsapp">
                                     </a>
-                                    <a href="<?php //echo $social_media['tiktok_url'] ?>">
+                                    <a href="https://t.me/share/url?url=<?php echo $post_url; ?>&text=<?php echo $post_title; ?>" target="_blank" rel="nofollow">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/telegram-black.svg" alt="telegram">
                                     </a>
-                                    <a href="<?php //echo $social_media['linkedin_url'] ?>">
+                                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo $post_url; ?>" target="_blank" rel="nofollow">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/linkedin-black.svg" alt="linkedin">
                                     </a>
                                 </div>
@@ -166,7 +168,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                     <?php if($current_author_id != 0){ ?>
                         <div class="pb-3 saperator_black"></div>
                         <h5 class="py-3">
-                            <?php echo ($current_language == 'ar') ? 'اقرأوا المزيد من المقالات لهذا الكاتب' : 'Read more articles by this author'; ?>
+                            <?php echo 'اقرأوا المزيد من المقالات لهذا الكاتب'; ?>
                         </h5>
                         <div class="current_author">
                             <?php echo get_the_post_thumbnail($current_author_id); ?>

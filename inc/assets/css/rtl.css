@@ -989,6 +989,8 @@ section {
 
 .social_links_single_post {
   position: sticky;
+  top: 15%;
+  z-index: 10;
 }
 .social_links_single_post a {
   display: block;
