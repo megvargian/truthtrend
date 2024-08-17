@@ -23,17 +23,19 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
         <div class="row gx-5 d-none d-lg-flex">
             <div class="col-4">
                 <div class="row gx-5">
-                    <div class="col-12 mb-4 horizontal-saperator-right-side">
+                    <div class="col-12 mb-4 horizontal-saperator-right-side d-flex">
                         <img class="w-100 h-auto" src="<?php echo $post_custom_fields_1['images']['desktop_image']; ?>" alt="<?php echo $post_1 -> post_title ?>">
-                        <a href="<?php echo get_permalink($post_1 -> ID); ?>">
-                            <h5 class="mt-2"><?php echo $post_1 -> post_title ?></h5>
-                        </a>
-                        <a class="mt-2" href="<?php echo get_permalink($post_custom_fields_1['author'] -> ID); ?>" style="font-size: 1rem;">
-                            <?php echo get_the_title($post_custom_fields_1['author'] -> ID); ?>
-                        </a>
+                        <div>
+                            <a href="<?php echo get_permalink($post_1 -> ID); ?>">
+                                <h5 class="mt-2"><?php echo $post_1 -> post_title ?></h5>
+                            </a>
+                            <a class="mt-2" href="<?php echo get_permalink($post_custom_fields_1['author'] -> ID); ?>" style="font-size: 1rem;">
+                                <?php echo get_the_title($post_custom_fields_1['author'] -> ID); ?>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-12">
                         <img class="w-100 h-auto" src="<?php echo $post_custom_fields_2['images']['desktop_image']; ?>" alt="<?php echo $post_2 -> post_title; ?>">
                         <a href="<?php echo get_permalink($post_2 -> ID); ?>">
@@ -43,7 +45,7 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
                             <?php echo get_the_title($post_custom_fields_2['author'] -> ID); ?>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-8">
                 <img class="w-100 h-auto" src="<?php echo $post_custom_fields_0['images']['desktop_image']; ?>" alt="<?php echo $post_0 -> post_title ?>">
