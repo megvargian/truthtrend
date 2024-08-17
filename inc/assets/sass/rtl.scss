@@ -946,3 +946,16 @@ section{
 .custom-height-second-index{
 	height: 350px;
 }
+
+
+.social_links_single_post{
+	display: block;
+	position: sticky;
+	a{
+		margin-bottom: 1rem;
+		img{
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+}

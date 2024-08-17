@@ -81,8 +81,32 @@ $current_language = apply_filters('wpml_current_language', NULL);
                             </div>
                         </div>
                         <div class="row pb-3">
-                            <div id="content" class="content">
-                                <?php the_content(); ?>
+                            <div class="col-10">
+                                <div id="content" class="content">
+                                    <?php the_content(); ?>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="social_links_single_post">
+                                    <a href="<?php //echo $social_media['facebook_url'] ?>">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/facebook.svg" alt="facebook">
+                                    </a>
+                                    <a href="<?php //echo $social_media['twitterx_url'] ?>">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="<?php //echo $social_media['youtube_url'] ?>">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/youtube.svg" alt="youtube">
+                                    </a>
+                                    <a href="<?php //echo $social_media['instagram_url'] ?>">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/insta.svg" alt="insta">
+                                    </a>
+                                    <a href="<?php //echo $social_media['tiktok_url'] ?>">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/tiktok.svg" alt="tiktok">
+                                    </a>
+                                    <a href="<?php //echo $social_media['linkedin_url'] ?>">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     <?
@@ -108,7 +132,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
             <div class="col-lg-4 px-5 pt-4 col-12">
                 <div>
                     <h2 class="text-black mb-md-5 mb-2 border-right-custom">
-                        <?php echo ($current_language == 'ar') ? 'الأكثر قراءة' : 'Most read?'; ?>
+                        <?php echo 'الأكثر قراءة'; ?>
                     </h2>
                     <ol id="order-list-podcast" class="pb-3">
                         <?php
