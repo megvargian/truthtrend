@@ -24,7 +24,7 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
             <div class="col-4">
                 <div class="row gx-5">
                     <div class="col-12 mb-4 horizontal-saperator-right-side d-flex">
-                        <img class="w-100 h-auto" src="<?php echo $post_custom_fields_1['images']['desktop_image']; ?>" alt="<?php echo $post_1 -> post_title ?>">
+                        <img class="h-auto" style="width: 100px;" src="<?php echo $post_custom_fields_1['images']['desktop_image']; ?>" alt="<?php echo $post_1 -> post_title ?>">
                         <div style="padding-right: 10px;">
                             <a href="<?php echo get_permalink($post_1 -> ID); ?>">
                                 <h5 class="mt-2"><?php echo $post_1 -> post_title ?></h5>
