@@ -77,7 +77,7 @@ $footer_logo = $getGeneralFields['footer_logo'];
                 <div class="white_seperator w-100"></div>
            </div>
            <div class="row py-4">
-                <div class="col-12">
+                <div class="col-8">
                     <ul class="d-flex justify-content-start align-content-start second-section">
                         <?php foreach($footer_fields[2]['child_items'] as $items){ ?>
                             <li>
@@ -87,6 +87,11 @@ $footer_logo = $getGeneralFields['footer_logo'];
                             </li>
                         <?php } ?>
                     </ul>
+                </div>
+                <div class="col-4">
+                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button" target="_blank">
+                        <?php echo 'للدعم المالي' ?>
+                    </a>
                 </div>
            </div>
            <div class="row">
