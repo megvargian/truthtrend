@@ -22,7 +22,7 @@ $post_custom_fields_2 = get_fields($post_2 -> ID);
         </div>
         <div class="row gx-5 d-none d-lg-flex">
             <div class="col-4">
-                <div class="row text-right">
+                <div class="row text-right pb-3">
                     <h4>آراء</h4>
                 </div>
                 <div class="row gx-5">
