@@ -225,7 +225,7 @@ th {
 }
 @font-face {
 	font-family: 'alexandria-regular';
-	src:  url('inc/assets/fonts/alexandria-regular.woff2') format('woff2'),
+	src:  url('inc/assets/fonts/alexandria-regular.woff') format('woff2'),
   url('inc/assets/fonts/alexandria-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
