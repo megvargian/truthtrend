@@ -89,7 +89,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                             <div class="col-2">
                                 <div class="social_links_single_post">
                                     <a href="<?php //echo $social_media['facebook_url'] ?>">
-                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/facebook.svg" alt="facebook">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/facebook-black.svg" alt="facebook">
                                     </a>
                                     <a href="<?php //echo $social_media['twitterx_url'] ?>">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/twitter.svg" alt="twitter">
