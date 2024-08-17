@@ -94,7 +94,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                 <div class="sub-full-menu">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-3">
+                                            <div class="col-6">
                                                 <div class="sub-div">
                                                     <!-- <div class="sub-label mb-3">
                                                         <h5><?php // echo $single_menu['sub_menu_section']['left_side_menu_label'] ?></h5>
