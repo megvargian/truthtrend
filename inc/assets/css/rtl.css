@@ -959,3 +959,11 @@ section {
   border-radius: 15px;
   height: 500px;
 }
+
+.cusotm-header-position h2 {
+  position: absolute;
+  z-index: 12;
+  right: 2%;
+  top: 40%;
+  color: #fff;
+}
