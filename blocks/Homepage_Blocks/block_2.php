@@ -14,7 +14,7 @@ $posts = $block2_fields['posts'];
     <div class="container">
         <!-- <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
             <div class="col-12">
-                <a href="<?=//$block2_fields['title_url'] ?>">
+                <a href="<?php //$block2_fields['title_url'] ?>">
                     <h2 class="text-center"><?php //echo $block2_fields['title'] ?></h2>
                 </a>
             </div>
