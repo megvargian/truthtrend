@@ -252,6 +252,14 @@ body.hide_scroll {
   display: flex;
   width: 100vw;
 }
+.header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Two columns */
+  grid-auto-rows: auto; /* Rows will auto-size based on content */
+  gap: 10px; /* Optional: Space between columns */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
 .header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list li:first-child {
   margin-right: 1.5rem;
 }
@@ -966,4 +974,5 @@ section {
   right: 2%;
   top: 40%;
   color: #fff;
+  font-size: 3rem;
 }

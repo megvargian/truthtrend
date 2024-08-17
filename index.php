@@ -41,11 +41,11 @@ get_header();
         });
         var swiper = new Swiper(".firstSwiperDesktop", {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 10,
             loop: true,
-            // autoplay: {
-            //     delay: 5000,
-            // },
+            autoplay: {
+                delay: 5000,
+            },
         });
         var swiper = new Swiper(".SecondIndexSwiper", {
             slidesPerView: 1,

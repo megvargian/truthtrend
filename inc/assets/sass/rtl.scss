@@ -199,6 +199,12 @@ body.hide_scroll{
 				width: 100vw;
 				.sub-div{
 					.sub-menu-list{
+						display: grid;
+						grid-template-columns: repeat(2, auto); /* Two columns */
+						grid-auto-rows: auto; /* Rows will auto-size based on content */
+						gap: 10px; /* Optional: Space between columns */
+						list-style-type: none; /* Remove bullet points */
+						padding: 0;
 						li:first-child{
 							margin-right: 1.5rem;
 						}
@@ -927,5 +933,6 @@ section{
 		right: 2%;
 		top: 40%;
 		color: #fff;
+		font-size: 3rem;
 	}
 }
