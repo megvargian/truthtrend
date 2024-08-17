@@ -543,7 +543,7 @@ section {
   position: relative;
 }
 
-.horizontal-saperator-right-side::before {
+.horizontal-saperator-right-side::after {
   content: "";
   position: absolute;
   top: 10%;
