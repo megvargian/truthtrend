@@ -86,25 +86,25 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                     <?php the_content(); ?>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-1">
                                 <div class="social_links_single_post">
                                     <a href="<?php //echo $social_media['facebook_url'] ?>">
                                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/facebook-black.svg" alt="facebook">
                                     </a>
                                     <a href="<?php //echo $social_media['twitterx_url'] ?>">
-                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/twitter.svg" alt="twitter">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/x-black.svg" alt="x">
                                     </a>
                                     <a href="<?php //echo $social_media['youtube_url'] ?>">
-                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/youtube.svg" alt="youtube">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/pinterest-black.svg" alt="pinterest">
                                     </a>
                                     <a href="<?php //echo $social_media['instagram_url'] ?>">
-                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/insta.svg" alt="insta">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/whatsapp-black.svg" alt="whatsapp">
                                     </a>
                                     <a href="<?php //echo $social_media['tiktok_url'] ?>">
-                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/tiktok.svg" alt="tiktok">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/telegram-black.svg" alt="telegram">
                                     </a>
                                     <a href="<?php //echo $social_media['linkedin_url'] ?>">
-                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/linkedin.svg" alt="linkedin">
+                                        <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/linkedin-black.svg" alt="linkedin">
                                     </a>
                                 </div>
                             </div>

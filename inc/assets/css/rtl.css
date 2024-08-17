@@ -986,3 +986,15 @@ section {
 .custom-height-second-index {
   height: 350px;
 }
+
+.social_links_single_post {
+  display: block;
+  position: sticky;
+}
+.social_links_single_post a {
+  margin-bottom: 1rem;
+}
+.social_links_single_post a img {
+  width: 1rem;
+  height: 1rem;
+}
