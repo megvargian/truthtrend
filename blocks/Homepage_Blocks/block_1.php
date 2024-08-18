@@ -12,7 +12,7 @@ $block1_fields = get_fields();
                     <?php
                     foreach ($block1_fields['main_posts'] as $main_post) {
                         $post_custom_fields = get_fields($main_post['main_post'] -> ID);
-                        $isYoutube = $post_custom_fields['youtube_url'] ? true: false;
+                        $isYoutube = $post_custom_fields['youtube_url'] ? true : false;
                     ?>
                         <div class="swiper-slide">
                             <?php if($isYoutube){ ?>
