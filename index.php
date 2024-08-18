@@ -98,6 +98,11 @@ get_header();
             autoplay: {
                 delay: 5000,
             },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     })
 </script>

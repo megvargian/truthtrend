@@ -59,6 +59,7 @@ $swiper_posts = $block8_fields['swiper_posts'];
                                 </div>
                         <?php } ?>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
