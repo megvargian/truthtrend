@@ -5,7 +5,6 @@
 $block8_fields = get_fields();
 $posts = $block8_fields['posts'];
 $swiper_posts = $block2_fields['swiper_posts'];
-$all_posts = array_merge($swiper_posts, $posts);
 ?>
 <section class="pt-0">
     <div class="container">
@@ -66,7 +65,23 @@ $all_posts = array_merge($swiper_posts, $posts);
         <div class="row d-block d-lg-none">
             <div class="swiper ThirdSwiperMobile">
                 <div class="swiper-wrapper">
-                    <?php foreach($all_posts as $post){
+                    <?php foreach($swiper_posts as $post){
+                        $get_field = get_fields($post['post'] -> ID);
+                    ?>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="<?php echo get_permalink($post['post'] -> ID); ?>">
+                                    <img class="w-100 h-100 d-none d-sm-block d-lg-none" src="<?php echo $get_field['images']['tablet_image']; ?>" alt="<?php echo $post['post'] -> post_title; ?>">
+                                    <img class="w-100 h-100 d-block d-sm-none" src="<?php echo $get_field['images']['mobile_image']; ?>" alt="<?php echo $post['post'] -> post_title; ?>">
+                                    <h5 class="mb-3"><?php echo $post['post'] -> post_title; ?></h5>
+                                </a>
+                                <a href="<?php echo get_permalink($get_field['author'] -> ID); ?>">
+                                    <?php echo get_the_title($get_field['author'] -> ID); ?>
+                                </a>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    <?php foreach($posts as $post){
                         $get_field = get_fields($post['post'] -> ID);
                     ?>
                         <div class="swiper-slide">
