@@ -8,8 +8,8 @@ $tab_1_custom_fields = get_fields($tab_1['main_post'] -> ID);
 ?>
 <section class="bg-black py-2">
     <div class="container">
-        <div class="row text-center">
-            <h2><?php echo $tab_1['title']; ?></h2>
+        <div class="row text-center py-4">
+            <h2 class="text-white"><?php echo $tab_1['title']; ?></h2>
         </div>
         <div class="row mt-5">
             <div class="col-sm-6 col-12">
