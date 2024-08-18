@@ -393,8 +393,19 @@ function my_acf_init_block_types()
             array(
                 'name'              => 'Block13',
                 'title'             => __('Block13'),
-                'description'       => __('This is the tirtheenth Block of Homepage'),
+                'description'       => __('This is the thirtheenth Block of Homepage'),
                 'render_template'   => 'blocks/Homepage_Blocks/block_13.php',
+                'category'          => 'formatting',
+                'icon'              => 'admin-comments',
+                'keywords'          => array('testimonial', 'quote'),
+            )
+        );
+        acf_register_block_type(
+            array(
+                'name'              => 'Block14',
+                'title'             => __('Block14'),
+                'description'       => __('This is the fourtheenth Block of Homepage'),
+                'render_template'   => 'blocks/Homepage_Blocks/block_14.php',
                 'category'          => 'formatting',
                 'icon'              => 'admin-comments',
                 'keywords'          => array('testimonial', 'quote'),
