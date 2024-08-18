@@ -20,18 +20,6 @@ $second_args = array(
     'category__in'   => [32, 33, 34],      // Array of category IDs (replace with your category IDs)
 );
 $query = new WP_Query($second_args);
-
-if ($query->have_posts()) {
-    while ($query->have_posts()) {
-        $query->the_post();
-        // Your loop code here, such as displaying the post title and date
-        the_title('<h2>', '</h2>');
-        echo '<p>' . get_the_date() . '</p>';
-    }
-    wp_reset_postdata();
-} else {
-    echo 'No posts found';
-}
 ?>
 <section>
     <div class="container">
@@ -57,6 +45,21 @@ if ($query->have_posts()) {
                         </li>
                     <?php } } ?>
                 </ol>
+            </div>
+            <div class="col-md-4 col-12">
+                <?php
+                    if ($query->have_posts()) {
+                        while ($query->have_posts()) {
+                            $query->the_post();
+                            // Your loop code here, such as displaying the post title and date
+                            the_title('<h2>', '</h2>');
+                            echo '<p>' . get_the_date() . '</p>';
+                        }
+                        wp_reset_postdata();
+                    } else {
+                        echo 'No posts found';
+                    }
+                ?>
             </div>
         </div>
     </div>
