@@ -9,12 +9,12 @@ $swiper_posts = $block8_fields['swiper_posts'];
 <section class="pt-0">
     <div class="container">
         <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
-            <div class="col-12">
-                <a href="<?php echo $block8_fields['title_url']; ?>">
-                    <h2 class="text-center"><?php echo $block8_fields['title']; ?></h2>
-                </a>
+            <div class="col-12 justify-content-center d-flex">
                 <a href="<?php echo $block8_fields['sub_title_url']; ?>">
                     <h4 class="text-right"><?php echo $block8_fields['sub_title']; ?></h4>
+                </a>
+                <a href="<?php echo $block8_fields['title_url']; ?>">
+                    <h2 class="text-center"><?php echo $block8_fields['title']; ?></h2>
                 </a>
             </div>
         </div>
