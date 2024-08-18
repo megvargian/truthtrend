@@ -7,8 +7,6 @@ $block15_fields = get_fields();
 $args = array(
     'post_type' => 'post', // Change to your custom post type if needed
     'posts_per_page' => 5,
-    'meta_key' => 'post_views_count', // The meta key used by Post Views Counter plugin
-    'orderby' => 'meta_value_num', // Order by numeric value of the meta key
     'order' => 'DESC', // Get the highest viewed posts first
 );
 $most_viewed_query = new WP_Query($args);
