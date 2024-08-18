@@ -12,13 +12,6 @@ $posts = $block2_fields['posts'];
 </section>
 <section class="pt-5">
     <div class="container">
-        <!-- <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
-            <div class="col-12">
-                <a href="<?php //$block2_fields['title_url'] ?>">
-                    <h2 class="text-center"><?php //echo $block2_fields['title'] ?></h2>
-                </a>
-            </div>
-        </div> -->
         <div class="row">
             <div class="swiper FirstSwiperMobile">
                 <div class="swiper-wrapper">
