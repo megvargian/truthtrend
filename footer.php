@@ -24,9 +24,6 @@ $footer_logo = $getGeneralFields['footer_logo'];
                     <img class="logo" src="<?php echo $footer_logo; ?>" alt="naqd-logo">
                 </a>
            </div>
-           <div class="row">
-                <div class="white_seperator w-100"></div>
-           </div>
            <div class="row py-4">
                 <div class="col-lg-6 col-12">
                     <div class="row">
@@ -55,9 +52,6 @@ $footer_logo = $getGeneralFields['footer_logo'];
                     </div>
                 </div>
            </div>
-           <div class="row">
-                <div class="white_seperator w-100"></div>
-           </div>
            <div class="row py-4">
                 <div class="col-md-8 col-sm-7 col-6">
                     <ul class="d-flex justify-content-start align-content-start second-section">
@@ -75,12 +69,6 @@ $footer_logo = $getGeneralFields['footer_logo'];
                         <?php echo 'للدعم المالي' ?>
                     </a>
                 </div>
-           </div>
-           <div class="row">
-                <div class="white_seperator w-100"></div>
-           </div>
-           <div class="row">
-
            </div>
         </div>
     </div>
