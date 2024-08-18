@@ -1,9 +1,9 @@
 <?php
 /**
- * Block9 Block Template
+ * Block12 Block Template
  */
-$block9_fields = get_fields();
-$tab_1 = $block9_fields['tab_1'];
+$block12_fields = get_fields();
+$tab_1 = $block12_fields['tab_1'];
 $tab_1_custom_fields = get_fields($tab_1['main_post'] -> ID);
 ?>
 <section class="bg-black py-2">
