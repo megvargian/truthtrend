@@ -23,11 +23,12 @@ $most_viewed_query = new WP_Query($args);
                         // Loop through the posts
                         while ($most_viewed_query->have_posts()) {
                             $most_viewed_query->the_post();
+
                             $get_custom_feilds = get_fields(get_the_ID());
                     ?>
                         <li>
-                            <a class="mt-2 text-black a-h3" href="<?php echo get_permalink($post['post'] -> ID); ?>">
-                                <?php echo $post['post'] -> post_title ?>
+                            <a class="mt-2 text-black a-h3" href="<?php echo get_permalink(get_the_ID()); ?>">
+                                <?php echo get_the_title(get_the_ID());?>
                             </a>
                             <a class="mt-2" href="<?php echo get_permalink($get_custom_feilds['author'] -> ID); ?>" style="font-size: 1rem; line-height: 4">
                                 <?php echo get_the_title($get_custom_feilds['author'] -> ID); ?>
