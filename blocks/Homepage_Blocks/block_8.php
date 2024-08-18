@@ -4,7 +4,7 @@
  */
 $block8_fields = get_fields();
 $posts = $block8_fields['posts'];
-$swiper_posts = $block2_fields['swiper_posts'];
+$swiper_posts = $block8_fields['swiper_posts'];
 ?>
 <section class="pt-0">
     <div class="container">
