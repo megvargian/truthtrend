@@ -1002,7 +1002,10 @@ section {
 }
 
 .cup {
-  width: 2rem;
-  height: 2rem;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
   margin-right: 15px;
+  rotate: -12deg;
+  left: 30%;
 }
