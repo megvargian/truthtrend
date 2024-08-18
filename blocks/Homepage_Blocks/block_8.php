@@ -13,15 +13,13 @@ $swiper_posts = $block8_fields['swiper_posts'];
                 <a href="<?php echo $block8_fields['title_url']; ?>">
                     <h2 class="text-center"><?php echo $block8_fields['title']; ?></h2>
                 </a>
+                <a href="<?php echo $block8_fields['sub_title_url']; ?>">
+                    <h4 class="text-right"><?php echo $block8_fields['sub_title']; ?></h4>
+                </a>
             </div>
         </div>
         <div class="row gx-5 d-none d-lg-flex">
             <div class="col-4">
-                <div class="row text-right pb-3">
-                    <a href="<?php echo $block8_fields['sub_title_url']; ?>">
-                        <h4><?php echo $block8_fields['sub_title']; ?></h4>
-                    </a>
-                </div>
                 <div class="row gx-5">
                     <?php foreach ($posts as $post) {
                       $post_custom_fields = get_fields($post['post'] -> ID);
