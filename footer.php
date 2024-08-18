@@ -54,30 +54,12 @@ $footer_logo = $getGeneralFields['footer_logo'];
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                    <div class="row d-block d-lg-none">
-                        <div class="white_seperator w-100"></div>
-                    </div>
-                    <div class="row pt-lg-0 pt-4">
-                        <div class="col-lg-3 col-0"></div>
-                        <div class="col-lg-9 col-12">
-                            <!-- <div class="subscription">
-                                <h5 class="text-white pb-3">
-                                    <?php //echo $getGeneralFields['subscription_on_youtube']['title']; ?>
-                                </h5>
-                                <a href="<?php //echo $getGeneralFields['subscription_on_youtube']['button_url']; ?>" class="main_button">
-                                    <?php //echo $getGeneralFields['subscription_on_youtube']['button_text']; ?>
-                                </a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
            </div>
            <div class="row">
                 <div class="white_seperator w-100"></div>
            </div>
            <div class="row py-4">
-                <div class="col-8">
+                <div class="col-md-8 col-sm-7 col-6">
                     <ul class="d-flex justify-content-start align-content-start second-section">
                         <?php foreach($footer_fields[2]['child_items'] as $items){ ?>
                             <li>
@@ -88,8 +70,8 @@ $footer_logo = $getGeneralFields['footer_logo'];
                         <?php } ?>
                     </ul>
                 </div>
-                <div class="col-4">
-                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button" target="_blank">
+                <div class="col-md-4 col-sm-5 col-6 d-flex justify-content-center align-content-center">
+                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-content-center" target="_blank" style="font-size: 1rem;">
                         <?php echo 'للدعم المالي' ?>
                     </a>
                 </div>
