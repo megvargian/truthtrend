@@ -5,9 +5,11 @@
 $block15_fields = get_fields();
 // Query to get the top 5 most viewed posts
 $args = array(
-    'post_type' => 'post', // Change to your custom post type if needed
+    'post_type' => 'post',
     'posts_per_page' => 5,
-    'order' => 'DESC', // Get the highest viewed posts first
+    'meta_key'  => 'post_views_count',
+    'orderby'   => 'meta_value_num',
+    'order' => 'DESC',
 );
 $most_viewed_query = new WP_Query($args);
 ?>
