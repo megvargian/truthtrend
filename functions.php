@@ -380,6 +380,17 @@ function my_acf_init_block_types()
         );
         acf_register_block_type(
             array(
+                'name'              => 'Block12',
+                'title'             => __('Block12'),
+                'description'       => __('This is the twelveth Block of Homepage'),
+                'render_template'   => 'blocks/Homepage_Blocks/block_12.php',
+                'category'          => 'formatting',
+                'icon'              => 'admin-comments',
+                'keywords'          => array('testimonial', 'quote'),
+            )
+        );
+        acf_register_block_type(
+            array(
                 'name'              => 'video_Block2',
                 'title'             => __('video_Block2'),
                 'description'       => __('This is the second Block of videos'),
