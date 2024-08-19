@@ -76,7 +76,7 @@ $counter = 0;
                 <div class="main-recent-post">
                     <?php
                         $post_custom_fields = get_fields($first_post);
-                        $first_post_title = get_the_title($first_post)
+                        $first_post_title = get_the_title($first_post);
                     ?>
                     <a class="position-relative" href="<?php echo get_permalink($first_post); ?>">
                         <div class="position-relative cusotm-header-position">
