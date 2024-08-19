@@ -21,41 +21,48 @@ $footer_logo = $getGeneralFields['footer_logo'];
         <div class="container">
            <div class="row d-flex justify-content-center align-center py-4">
                 <a class="fit-content" href="<?php echo home_url(); ?>">
-                    <img class="logo" src="<?php echo $footer_logo; ?>" alt="naqd-logo">
+                    <img class="logo" src="<?php echo $footer_logo; ?>" alt="truthtrend">
                 </a>
            </div>
            <div class="row py-4">
-                <div class="col-lg-6 col-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 pb-lg-0 pb-3">
-                            <ul class="fit-content first-section d-flex d-lg-block">
-                                <?php foreach($footer_fields[0]['child_items'] as $items){ ?>
-                                    <li>
-                                        <a href="<?php echo $items['url']; ?>">
-                                            <?php echo $items['label']; ?>
-                                        </a>
-                                    </li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6 col-12 pb-lg-0 pb-3">
-                            <ul class="fit-content first-section d-flex d-lg-block">
-                                <?php foreach($footer_fields[1]['child_items'] as $items){ ?>
-                                    <li>
-                                        <a href="<?php echo $items['url']; ?>">
-                                            <?php echo $items['label']; ?>
-                                        </a>
-                                    </li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-12 pb-lg-0 pb-3">
+                    <ul class="fit-content first-section d-flex d-lg-block">
+                        <?php foreach($footer_fields[0]['child_items'] as $items){ ?>
+                            <li>
+                                <a href="<?php echo $items['url']; ?>">
+                                    <?php echo $items['label']; ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 pb-lg-0 pb-3">
+                    <ul class="fit-content first-section d-flex d-lg-block">
+                        <?php foreach($footer_fields[1]['child_items'] as $items){ ?>
+                            <li>
+                                <a href="<?php echo $items['url']; ?>">
+                                    <?php echo $items['label']; ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 pb-lg-0 pb-3">
+                    <ul class="fit-content first-section d-flex d-lg-block">
+                        <?php foreach($footer_fields[2]['child_items'] as $items){ ?>
+                            <li>
+                                <a href="<?php echo $items['url']; ?>">
+                                    <?php echo $items['label']; ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
                 </div>
            </div>
            <div class="row py-4">
                 <div class="col-md-8 col-sm-7 col-6">
                     <ul class="d-flex justify-content-start align-content-start second-section">
-                        <?php foreach($footer_fields[2]['child_items'] as $items){ ?>
+                        <?php foreach($footer_fields[3]['child_items'] as $items){ ?>
                             <li>
                                 <a href="<?php echo $items['url']; ?>">
                                     <?php echo $items['label']; ?>
