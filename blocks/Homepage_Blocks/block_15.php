@@ -60,7 +60,7 @@ $counter = 0;
                                     ?>
                                         <li>
                                             <?php the_title('<h2>', '</h2>'); ?>
-                                            <p><?php  get_the_date(); ?> </p>
+                                            <p><?php echo get_the_date(); ?> </p>
                                         </li>
                                     <?php
                                 }
