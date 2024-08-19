@@ -116,11 +116,6 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                     wp_reset_postdata();
                 endif;
                 ?>
-                <div class="row">
-                    <div class="w-100 single-post-subscriptions">
-                        <?php echo do_shortcode('[contact-form-7 id="4b7188c" title="Subscription"]') ?>
-                    </div>
-                </div>
                 <div class="row tags pt-4 pb-mt-0 pb-4">
                     <?php  foreach($tags as $tag){ ?>
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-5">

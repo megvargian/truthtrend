@@ -140,7 +140,7 @@ body.hide_scroll {
 }
 
 .text_main_color {
-  color: #FD4400;
+  color: #787CF0;
 }
 
 .noselect {
@@ -154,12 +154,12 @@ body.hide_scroll {
 
 ::-moz-selection { /* Code for Firefox */
   color: #000;
-  background: #FD4400;
+  background: #787CF0;
 }
 
 ::selection {
   color: #000;
-  background: #FD4400;
+  background: #787CF0;
 }
 
 :focus {

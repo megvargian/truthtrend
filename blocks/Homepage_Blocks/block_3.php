@@ -4,7 +4,7 @@
  */
 $block3_fields = get_fields();
 ?>
-<section style="background-color: #FD4400;">
+<section style="background-color: #787CF0;">
     <div class="container">
         <div class="row">
             <div class="col-12 mb-md-5 mb-sm-4 mb-2">

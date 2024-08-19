@@ -140,7 +140,7 @@ body.hide_scroll {
 }
 
 .text_main_color {
-  color: #FD4400;
+  color: #787CF0;
 }
 
 .noselect {
@@ -154,12 +154,12 @@ body.hide_scroll {
 
 ::-moz-selection { /* Code for Firefox */
   color: #000;
-  background: #FD4400;
+  background: #787CF0;
 }
 
 ::selection {
   color: #000;
-  background: #FD4400;
+  background: #787CF0;
 }
 
 :focus {
@@ -300,7 +300,7 @@ html {
   width: 28px;
   bottom: 4px;
   right: 39px;
-  background-color: #FD4400;
+  background-color: #787CF0;
   border-radius: 19px;
   cursor: pointer;
   -webkit-transition: all 0.2s 0.2s, left 0.2s;
@@ -424,7 +424,7 @@ header a {
   font-size: 1.5rem;
 }
 header a:hover {
-  color: #FD4400;
+  color: #787CF0;
 }
 
 section {
@@ -433,7 +433,7 @@ section {
 
 .main_button {
   color: #fff;
-  background-color: #FD4400;
+  background-color: #787CF0;
   border-radius: 30px;
   border: none;
   padding: 0.5rem 1.5rem;
@@ -462,7 +462,7 @@ section {
 }
 
 .nav-link.active {
-  color: #FD4400 !important;
+  color: #787CF0 !important;
 }
 
 .nav-link {
@@ -573,7 +573,7 @@ section {
   cursor: pointer;
 }
 .swiper .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #FD4400;
+  background-color: #787CF0;
 }
 
 #order-list-podcast {
@@ -581,17 +581,17 @@ section {
   margin-left: 10px;
 }
 #order-list-podcast li::marker {
-  color: #FD4400;
+  color: #787CF0;
   font-size: 4rem;
 }
 
 .border-left-custom {
-  border-left: 2px solid #FD4400;
+  border-left: 2px solid #787CF0;
   padding-left: 2rem;
 }
 
 .border-right-custom {
-  border-left: 2px solid #FD4400;
+  border-left: 2px solid #787CF0;
   padding-left: 2rem;
 }
 
@@ -731,7 +731,7 @@ section {
   border: none;
   background-color: transparent;
   outline: none;
-  color: #FD4400;
+  color: #787CF0;
   font-size: 2rem;
   text-align: center;
   width: fit-content;
@@ -771,15 +771,15 @@ section {
 .single-post-page .tags a {
   background-color: transparent;
   padding: 0.5rem 2rem;
-  border: 1px solid #FD4400;
+  border: 1px solid #787CF0;
   border-radius: 23px;
 }
 .single-post-page .single-post-subscriptions input[type=email] {
   border-radius: 25px;
-  border: 1px solid #FD4400;
+  border: 1px solid #787CF0;
 }
 .single-post-page .single-post-subscriptions input[type=submit] {
-  background-color: #FD4400 !important;
+  background-color: #787CF0 !important;
 }
 
 .single_author {
@@ -812,7 +812,7 @@ section {
 }
 
 .about-us h1 {
-  color: #FD4400;
+  color: #787CF0;
   font-family: "cairo-regular";
   font-size: 40px;
   text-align: center;
@@ -824,13 +824,13 @@ section {
 }
 
 .contact_us h1 {
-  color: #FD4400;
+  color: #787CF0;
   font-family: "cairo-regular";
   font-size: 40px;
   text-align: center;
 }
 .contact_us input {
-  border: 1px solid #FD4400;
+  border: 1px solid #787CF0;
   text-align: left;
   border-radius: 23px;
   padding: 1rem 0.8rem;
@@ -839,7 +839,7 @@ section {
   width: 100%;
 }
 .contact_us textarea {
-  border: 1px solid #FD4400;
+  border: 1px solid #787CF0;
   text-align: left;
   border-radius: 23px;
   padding: 1rem 0.8rem;
@@ -854,7 +854,7 @@ section {
   padding: 0.8rem 4rem;
   font-family: "cairo-regular";
   color: #fff;
-  background-color: #FD4400;
+  background-color: #787CF0;
   width: fit-content;
 }
 .contact_us .wpcf7-spinner {
@@ -873,7 +873,7 @@ section {
 #progress-bar {
   height: 100%;
   width: 0;
-  background-color: #FD4400;
+  background-color: #787CF0;
   transition: width 0.1s;
 }
 
