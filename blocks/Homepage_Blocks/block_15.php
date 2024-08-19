@@ -64,15 +64,21 @@ $counter = 0;
                                     ?>
                                         <li>
                                             <a href="<?php echo get_permalink(get_the_ID()); ?>">
-                                                <?php the_title('<h2>', '</h2>'); ?>
+                                                <?php the_title('<h2 style="font-size: 2rem;">', '</h2>'); ?>
                                             </a>
-                                            <p><?php
-                                            if (!empty($categories)) {
-                                                foreach ($categories as $category) {
-                                                    echo $category->name;
-                                                }
-                                            }
-                                            ?></p>
+                                            <p>
+                                                <?php
+                                                    if (!empty($categories)) {
+                                                        foreach ($categories as $category) {
+                                                            ?>
+                                                                <a style="margin-left: 10px; font-size: 1rem;" href="<?php echo get_category_link($category->term_id); ?>">
+                                                                    <?php echo $category->name; ?>
+                                                                </a>
+                                                            <?php
+                                                        }
+                                                    }
+                                                ?>
+                                            </p>
                                             <p><?php echo get_the_date(); ?> </p>
                                         </li>
                                     <?php
