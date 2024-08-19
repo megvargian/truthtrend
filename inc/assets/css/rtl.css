@@ -640,9 +640,11 @@ section {
 }
 .order-list-recent-post li::marker {
   color: #787CF0;
+}
+.order-list-recent-post li::marker a {
   font-size: 1.5rem;
 }
-.order-list-recent-post li::marker .a-h3 {
+.order-list-recent-post li::marker .cat-text {
   font-size: 1rem !important;
 }
 

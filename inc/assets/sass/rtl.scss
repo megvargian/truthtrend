@@ -579,8 +579,10 @@ section{
 	margin-left: 10px;
 	li::marker{
 		color: #787CF0;
-		font-size: 1.5rem;
-		.a-h3{
+		a{
+			font-size: 1.5rem;
+		}
+		.cat-text{
 			font-size: 1rem !important;
 		}
 	}
