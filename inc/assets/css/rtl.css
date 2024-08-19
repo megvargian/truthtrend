@@ -263,6 +263,12 @@ body.hide_scroll {
 .header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list li:first-child {
   margin-right: 1.5rem;
 }
+.header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list li:last-child {
+  margin-left: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list .sub-menu-link {
   font-size: 0.7rem;
   margin-bottom: 13px;
