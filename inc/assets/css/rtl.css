@@ -638,6 +638,9 @@ section {
   list-style-type: decimal;
   margin-left: 10px;
 }
+.order-list-recent-post .a-h3 {
+  font-size: 1.5rem !important;
+}
 .order-list-recent-post li::marker {
   color: #787CF0;
 }

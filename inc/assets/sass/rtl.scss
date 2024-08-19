@@ -577,6 +577,9 @@ section{
 .order-list-recent-post{
 	list-style-type: decimal;
 	margin-left: 10px;
+	.a-h3{
+		font-size: 1.5rem !important;
+	}
 	li::marker{
 		color: #787CF0;
 		a{
