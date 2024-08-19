@@ -26,8 +26,8 @@ $counter = 0;
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-12 text-right">
-                <h2 class="text-black mb-md-5 mb-2 border-right-custom">
-                    <?php echo $block15_fields['most_readbles']['title'] ?>
+                <h2 class="text-black mb-md-4 mb-2">
+                    <?php echo 'الأكثر قراءة'; ?>
                 </h2>
                 <ol id="order-list-podcast">
                     <?php if ($most_viewed_query->have_posts()) {
@@ -47,7 +47,10 @@ $counter = 0;
                     <?php } } ?>
                 </ol>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-3 col-12">
+                <h2 class="text-black mb-md-4 mb-2">
+                    <?php echo 'الأكثر قراءة'; ?>
+                </h2>
                 <ul>
                     <?php
                         if ($query->have_posts()) {
@@ -57,9 +60,19 @@ $counter = 0;
                                 if($counter == 1){
                                     $first_post = get_the_ID();
                                 } else {
+                                    $categories = get_the_category();
                                     ?>
                                         <li>
-                                            <?php the_title('<h2>', '</h2>'); ?>
+                                            <a href="<?php echo get_permalink(get_the_ID()); ?>">
+                                                <?php the_title('<h2>', '</h2>'); ?>
+                                            </a>
+                                            <p><?php
+                                            if (!empty($categories)) {
+                                                foreach ($categories as $category) {
+                                                    echo $category->name;
+                                                }
+                                            }
+                                            ?></p>
                                             <p><?php echo get_the_date(); ?> </p>
                                         </li>
                                     <?php
@@ -72,7 +85,7 @@ $counter = 0;
                     ?>
                 </ul>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-5 col-12">
                 <div class="main-recent-post">
                     <?php
                         $post_custom_fields = get_fields($first_post);
