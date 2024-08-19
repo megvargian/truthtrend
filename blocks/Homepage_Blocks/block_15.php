@@ -20,6 +20,7 @@ $second_args = array(
     'category__in'   => [32, 33, 34],      // Array of category IDs (replace with your category IDs)
 );
 $query = new WP_Query($second_args);
+$counter = 0;
 ?>
 <section>
     <div class="container">
@@ -47,19 +48,49 @@ $query = new WP_Query($second_args);
                 </ol>
             </div>
             <div class="col-md-4 col-12">
-                <?php
-                    if ($query->have_posts()) {
-                        while ($query->have_posts()) {
-                            $query->the_post();
-                            // Your loop code here, such as displaying the post title and date
-                            the_title('<h2>', '</h2>');
-                            echo '<p>' . get_the_date() . '</p>';
+                <ul>
+                    <?php
+                        if ($query->have_posts()) {
+                            while ($query->have_posts()) {
+                                $query->the_post();
+                                $counter++;
+                                if($counter == 1){
+                                    $first_post = get_the_ID();
+                                } else {
+                                    ?>
+                                        <li>
+                                            <?php the_title('<h2>', '</h2>'); ?>
+                                            <p><?php  get_the_date(); ?> </p>
+                                        </li>
+                                    <?php
+                                }
+                            }
+                            wp_reset_postdata();
+                        } else {
+                            echo 'No posts found';
                         }
-                        wp_reset_postdata();
-                    } else {
-                        echo 'No posts found';
-                    }
-                ?>
+                    ?>
+                </ul>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="main-recent-post">
+                    <?php
+                        $post_custom_fields = get_fields($first_post);
+                        $first_post_title = get_the_title($first_post)
+                    ?>
+                    <a class="position-relative" href="<?php echo get_permalink($first_post); ?>">
+                        <div class="position-relative cusotm-header-position">
+                            <div class="middle-section">
+                                <h2 class="pb-3"><?php echo $first_post_title; ?></h2>
+                                <a href="<?php echo get_permalink($post_custom_fields['author'] -> ID); ?>">
+                                    <?php echo get_the_title($post_custom_fields['author'] -> ID); ?>
+                                </a>
+                            </div>
+                            <img class="w-100 add-border-radius d-none d-sm-block image-darker" src="<?php echo $post_custom_fields['images']['tablet_image'] ?>" alt="<?php echo $first_post_title; ?>">
+                            <img class="w-100 add-border-radius d-block d-sm-none image-darker" src="<?php echo $post_custom_fields['images']['mobile_image'] ?>" alt="<?php echo $first_post_title; ?>">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
