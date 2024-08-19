@@ -26,18 +26,17 @@ $counter = 0;
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-12 text-right">
-                <h2 class="text-black mb-md-4 mb-2">
+                <h2 class="text-black mb-md-4 mb-2" style="font-size: 1.5rem">
                     <?php echo 'الأكثر قراءة'; ?>
                 </h2>
-                <ol id="order-list-podcast">
+                <ol class="order-list-recent-post">
                     <?php if ($most_viewed_query->have_posts()) {
-                        // Loop through the posts
                         while ($most_viewed_query->have_posts()) {
                             $most_viewed_query->the_post();
                             $get_custom_feilds = get_fields(get_the_ID());
                     ?>
                         <li>
-                            <a class="mt-2 text-black a-h3" style="font-size: 2rem;" href="<?php echo get_permalink(get_the_ID()); ?>">
+                            <a class="mt-2 text-black a-h3" href="<?php echo get_permalink(get_the_ID()); ?>">
                                 <?php echo get_the_title(get_the_ID());?>
                             </a>
                             <a class="mt-2" href="<?php echo get_permalink($get_custom_feilds['author'] -> ID); ?>" style="font-size: 1rem; line-height: 4">
@@ -48,9 +47,6 @@ $counter = 0;
                 </ol>
             </div>
             <div class="col-md-3 col-12">
-                <h2 class="text-black mb-md-4 mb-2">
-                    <?php echo 'الأكثر قراءة'; ?>
-                </h2>
                 <ul>
                     <?php
                         if ($query->have_posts()) {

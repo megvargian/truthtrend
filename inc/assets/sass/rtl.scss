@@ -574,6 +574,17 @@ section{
 		font-size: 4rem;
 	}
 }
+.order-list-recent-post{
+	list-style-type: decimal;
+	margin-left: 10px;
+	li::marker{
+		color: #787CF0;
+		font-size: 1.5rem;
+		.a-h3{
+			font-size: 1rem !important;
+		}
+	}
+}
 .border-left-custom{
 	border-left: 2px solid #787CF0;
 	padding-left: 2rem;
