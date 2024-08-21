@@ -19,7 +19,7 @@ $footer_logo = $getGeneralFields['footer_logo'];
 <footer>
     <div class="main_footer_section bg-black">
         <div class="container">
-           <div class="row d-flex justify-content-center align-center py-4">
+           <div class="row d-flex justify-content-end align-center py-4">
                 <a class="fit-content" href="<?php echo home_url(); ?>">
                     <img class="logo" src="<?php echo $footer_logo; ?>" alt="truthtrend">
                 </a>
@@ -59,7 +59,7 @@ $footer_logo = $getGeneralFields['footer_logo'];
                     </ul>
                 </div>
                 <div class="col-lg-3 col-12 pb-lg-0 pb-3">
-                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center mb-3" target="_blank" style="font-size: 1rem;">
+                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center mb-0 mb-sm-5 pb-0 pb-sm-5" target="_blank" style="font-size: 1rem;">
                         <?php echo 'للدعم المالي' ?>
                     </a>
                     <ul class="d-flex justify-content-start align-content-start second-section">
