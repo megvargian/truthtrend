@@ -458,8 +458,6 @@ function my_acf_init_block_types()
     }
 }
 
-+-
-
 add_action('wp_ajax_load_more_posts', 'load_more_posts');
 add_action('wp_ajax_nopriv_load_more_posts', 'load_more_posts');
 
@@ -525,10 +523,10 @@ function load_more_tag_posts() {
     endif;
     wp_die();
 }
-add_action('wp_ajax_load_more_trend_posts', 'load_more_trend_posts');
-add_action('wp_ajax_nopriv_load_more_trend_posts', 'load_more_trend_posts');
+add_action('wp_ajax_load_more_tag_posts', 'load_more_tag_posts');
+add_action('wp_ajax_nopriv_load_more_tag_posts', 'load_more_tag_posts');
 
-function load_more_tag_posts() {
+function load_more_trend_posts() {
     $page = $_POST['page'];
     $categories = $_POST['categories'];
     $args = array(
@@ -591,8 +589,8 @@ function load_more_tag_posts() {
     wp_die();
 }
 
-add_action('wp_ajax_load_more_tag_posts', 'load_more_tag_posts');
-add_action('wp_ajax_nopriv_load_more_tag_posts', 'load_more_tag_posts');
+add_action('wp_ajax_load_more_trend_posts', 'load_more_trend_posts');
+add_action('wp_ajax_nopriv_load_more_trend_posts', 'load_more_trend_posts');
 
 function load_more_posts_search() {
     $page = $_POST['page'];
