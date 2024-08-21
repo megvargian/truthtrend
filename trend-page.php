@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
             data: {
                 action: 'load_more_trend_posts',
                 page: page,
-                categories: [25, 26, 23, 24, 22, 27],
+                categories: arrya(25, 26, 23, 24, 22, 27),
             },
             success: function(response) {
                 if (response === ''){
