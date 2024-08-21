@@ -5,7 +5,7 @@ $social_media = get_fields('options');
     <div class="container py-4">
         <div class="row justify-content-center">
             <div class="col-6 col-md-6">
-                <div class="social_links">
+                <div class="social_links justify-content-center">
                     <a href="<?php echo $social_media['facebook_url'] ?>">
                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/facebook.svg" alt="facebook">
                     </a>
