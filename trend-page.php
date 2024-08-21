@@ -79,21 +79,18 @@ $query = new WP_Query($args);
 <script>
 jQuery(document).ready(function($) {
     var page = 2; // Set the initial page number
-    var category_id = <?php echo get_query_var('cat'); ?>; // Get the current category ID
-
     <?php if($count < 6 ){ ?>
         $('#load-more-button').hide();
     <?php } ?>
-
     // Function to load more posts via AJAX
     function loadMorePosts() {
         $.ajax({
             type: 'POST',
             url: '<?php echo admin_url('admin-ajax.php'); ?>',
             data: {
-                action: 'load_more_posts',
+                action: 'load_more_trend_posts',
                 page: page,
-                category_id: category_id,
+                categories: [25, 26, 23, 24, 22, 27],
             },
             success: function(response) {
                 if (response === ''){
