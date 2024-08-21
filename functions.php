@@ -458,6 +458,71 @@ function my_acf_init_block_types()
     }
 }
 
+function load_more_posts() {
+    $page = $_POST['page'];
+    $category_id = $_POST['category_id'];
+
+    $args = array(
+        'cat' => $category_id,
+        'post_type' => 'post',
+        'posts_per_page' => 6,
+        'paged' => $page,
+        'order'             =>      'DSC',
+        'orderby'           =>      'date',
+    );
+
+    $query = new WP_Query($args);
+    $count = 0;
+    if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
+                $post_custom_fields = get_fields(get_the_ID());
+                $count++;
+           ?>
+            <div class=" col-xl-4 col-lg-6 col-md-6 col-12 mb-4 custom-class <?php echo $count % 3 != 0 ? 'horizontal-saperator-left-side' : ''?>">
+                <div class="inner-post">
+                    <a href="<?php echo get_permalink(get_the_ID()); ?>">
+                       <div class="" style="position: relative;">
+                            <?php if($post_custom_fields['images']['desktop_image'] == ''){ ?>
+                                <img class="w-100 h-100" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/lebanese-economics.jpg" alt="<?php the_title(); ?>">
+                            <?php } else { ?>
+                                <?php if($post_custom_fields['youtube_url']){ ?>
+                                    <div class="position-relative">
+                                        <a href="<?php echo $post_custom_fields['youtube_url'] ?>">
+                                            <img class="w-100 h-100 d-none d-lg-block image-darker" src="<?php echo $post_custom_fields['images']['desktop_image']; ?>" alt="<?php the_title(); ?>">
+                                            <img class="w-100 h-100 d-none d-sm-block d-lg-none image-darker" src="<?php echo $post_custom_fields['images']['tablet_image']; ?>" alt="<?php the_title(); ?>">
+                                            <img class="w-100 h-100 d-block d-sm-none image-darker" src="<?php echo $post_custom_fields['images']['mobile_image']; ?>" alt="<?php the_title(); ?>">
+                                            <img class="play" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/play-48.ico" alt="play">
+                                        </a>
+                                    </div>
+                                <?php } else{ ?>
+                                    <a href="<?php echo get_permalink(get_the_ID()); ?>">
+                                        <img class="w-100 h-100 d-none d-lg-block " src="<?php echo $post_custom_fields['images']['desktop_image']; ?>" alt="<?php the_title(); ?>">
+                                        <img class="w-100 h-100 d-none d-sm-block d-lg-none" src="<?php echo $post_custom_fields['images']['tablet_image']; ?>" alt="<?php the_title(); ?>">
+                                        <img class="w-100 h-100 d-block d-sm-none" src="<?php echo $post_custom_fields['images']['mobile_image']; ?>" alt="<?php the_title(); ?>">
+                                    </a>
+                                <?php } ?>
+                            <?php } ?>
+                            <?php if($post_custom_fields['author'] -> ID){ ?>
+                                <div class="inner-author">
+                                    <?php echo get_the_post_thumbnail($post_custom_fields['author'] -> ID); ?>
+                                    <a href="<?php echo get_permalink($post_custom_fields['author'] -> ID); ?>">
+                                        <?php echo get_the_title($post_custom_fields['author'] -> ID); ?>
+                                    </a>
+                                </div>
+                            <?php } ?>
+                       </div>
+                    </a>
+                    <a href="<?php echo get_permalink(get_the_ID()); ?>">
+                        <h4 class="mt-10 mb-lg-0 mb-4"><?php the_title(); ?></h4>
+                    </a>
+                </div>
+            </div>
+           <?php
+        endwhile;
+    endif;
+    wp_die();
+}
+
 add_action('wp_ajax_load_more_posts', 'load_more_posts');
 add_action('wp_ajax_nopriv_load_more_posts', 'load_more_posts');
 
