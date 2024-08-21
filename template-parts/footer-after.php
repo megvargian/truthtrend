@@ -3,7 +3,7 @@ $social_media = get_fields('options');
 ?>
 <div class="copyright_cont bg-black">
     <div class="container py-4">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-6 col-md-6">
                 <div class="social_links">
                     <a href="<?php echo $social_media['facebook_url'] ?>">
@@ -24,10 +24,6 @@ $social_media = get_fields('options');
                     <a href="<?php echo $social_media['linkedin_url'] ?>">
                         <img src="<?php echo get_template_directory_uri() ?>/inc/assets/images/social_icons/linkedin.svg" alt="linkedin">
                     </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-6">
-                <div class="copyright_text">
                 </div>
             </div>
         </div>

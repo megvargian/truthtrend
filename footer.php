@@ -58,9 +58,10 @@ $footer_logo = $getGeneralFields['footer_logo'];
                         <?php } ?>
                     </ul>
                 </div>
-           </div>
-           <div class="row py-4">
-                <div class="col-md-8 col-sm-7 col-6">
+                <div class="col-lg-3 col-12 pb-lg-0 pb-3">
+                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center" target="_blank" style="font-size: 1rem;">
+                        <?php echo 'للدعم المالي' ?>
+                    </a>
                     <ul class="d-flex justify-content-start align-content-start second-section">
                         <?php foreach($footer_fields[3]['child_items'] as $items){ ?>
                             <li>
@@ -71,15 +72,10 @@ $footer_logo = $getGeneralFields['footer_logo'];
                         <?php } ?>
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-5 col-6 d-flex justify-content-center align-items-center">
-                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center" target="_blank" style="font-size: 1rem;">
-                        <?php echo 'للدعم المالي' ?>
-                    </a>
-                </div>
            </div>
         </div>
     </div>
-    <?php  get_template_part('template-parts/footer', 'after'); ?>
+    <?php get_template_part('template-parts/footer', 'after'); ?>
 </footer>
 </div><!-- #page -->
 <script>
