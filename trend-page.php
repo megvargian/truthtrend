@@ -5,7 +5,7 @@
 get_header();
 $count = 0;
 $args = array(
-    'category__and' => array(25, 26, 23, 24, 22, 27),
+    'category__in' => array(25, 26, 23, 24, 22, 27),
     'post_type' => 'post',
     'posts_per_page' => 6,
     'order'             =>      'DSC',
