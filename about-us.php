@@ -6,7 +6,7 @@ get_header();
 $company_main_fields = get_fields();
 ?>
 
-<section class="about-us py-5">
+<section class="about-us py-5 bg-black">
 	<div class="container">
 		<div class="row pb-5">
 			<h1><?php the_title(); ?></h1>
