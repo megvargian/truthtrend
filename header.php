@@ -138,7 +138,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                     </div>
                     <div class="col-6 d-flex justify-content-center">
                         <a href="<?php echo home_url(); ?>">
-                            <img class="mobile_logo" src="<?php echo $save_for_mobile_logo; ?>" alt="naqd-logo">
+                            <img class="mobile_logo" src="<?php echo $save_for_mobile_logo; ?>" alt="truthtrend-logo">
                         </a>
                     </div>
                     <div class="col-3 text-<?php echo ($current_language == 'en') ? 'right' : 'left'; ?>">
@@ -209,15 +209,6 @@ $current_language = apply_filters('wpml_current_language', NULL);
 <?php } ?>
 <script>
     jQuery(document).ready(function($) {
-        // $('.toggle').click(function(e){
-        //     e.preventDefault();
-        //     $(this).toggleClass('toggle-on');
-        //     if($(this).hasClass('toggle-on')){
-        //         window.location.href = 'https://naqd.media/en/'
-        //     }else{
-        //         window.location.href = 'https://naqd.media/'
-        //     }
-        // });
         $('.menu_mobile_nav').click(function(event) {
             $(this).toggleClass('active');
             $('html, body').toggleClass('hide_scroll');
@@ -225,12 +216,6 @@ $current_language = apply_filters('wpml_current_language', NULL);
             $('.display_background_of_the_page').toggleClass('mobile_active');
             $('#progress-container').toggleClass('d-none');
         });
-        // $('.industries-dropdown').click(function(event) {
-        //     $('.menu_on_mobile_wrapper').toggleClass('submenu-active');
-        //     $(this).toggleClass('active');
-        //     $('.industries-dropdown .menu_item_main').toggleClass('active_page');
-        //     $('.menu_on_mobile').toggleClass('scroll_in_mobile_menu');
-        // })
         $(window).scroll(function() {
             var currentScreenPosition = $(document).scrollTop();
             if (currentScreenPosition > 250) {
