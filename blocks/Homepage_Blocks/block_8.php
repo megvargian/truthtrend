@@ -10,7 +10,39 @@ $swiper_posts = $block8_fields['swiper_posts'];
     <div class="container">
         <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
             <div class="col-12 d-flex justify-content-between align-items-center">
-                <div class="text-right">
+                <div class="text-center">
+                    <a href="<?php echo $block8_fields['sub_title_url']; ?>">
+                        <h4><?php echo $block8_fields['sub_title']; ?></h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row d-block d-lg-none">
+            <div class="swiper ThirdSwiperMobile">
+                <div class="swiper-wrapper">
+                    <?php foreach($posts as $post){
+                        $get_field = get_fields($post['post'] -> ID);
+                    ?>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="<?php echo get_permalink($post['post'] -> ID); ?>">
+                                    <img class="w-100 h-100 d-none d-sm-block d-lg-none" src="<?php echo $get_field['images']['tablet_image']; ?>" alt="<?php echo $post['post'] -> post_title; ?>">
+                                    <img class="w-100 h-100 d-block d-sm-none" src="<?php echo $get_field['images']['mobile_image']; ?>" alt="<?php echo $post['post'] -> post_title; ?>">
+                                    <h5 class="mb-3"><?php echo $post['post'] -> post_title; ?></h5>
+                                </a>
+                                <a href="<?php echo get_permalink($get_field['author'] -> ID); ?>">
+                                    <?php echo get_the_title($get_field['author'] -> ID); ?>
+                                </a>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <div class="text-right d-lg-flex d-none">
                     <a href="<?php echo $block8_fields['sub_title_url']; ?>">
                         <h4><?php echo $block8_fields['sub_title']; ?></h4>
                     </a>
@@ -69,22 +101,6 @@ $swiper_posts = $block8_fields['swiper_posts'];
             <div class="swiper ThirdSwiperMobile">
                 <div class="swiper-wrapper">
                     <?php foreach($swiper_posts as $post){
-                        $get_field = get_fields($post['post'] -> ID);
-                    ?>
-                        <div class="swiper-slide">
-                            <div>
-                                <a href="<?php echo get_permalink($post['post'] -> ID); ?>">
-                                    <img class="w-100 h-100 d-none d-sm-block d-lg-none" src="<?php echo $get_field['images']['tablet_image']; ?>" alt="<?php echo $post['post'] -> post_title; ?>">
-                                    <img class="w-100 h-100 d-block d-sm-none" src="<?php echo $get_field['images']['mobile_image']; ?>" alt="<?php echo $post['post'] -> post_title; ?>">
-                                    <h5 class="mb-3"><?php echo $post['post'] -> post_title; ?></h5>
-                                </a>
-                                <a href="<?php echo get_permalink($get_field['author'] -> ID); ?>">
-                                    <?php echo get_the_title($get_field['author'] -> ID); ?>
-                                </a>
-                            </div>
-                        </div>
-                    <?php } ?>
-                    <?php foreach($posts as $post){
                         $get_field = get_fields($post['post'] -> ID);
                     ?>
                         <div class="swiper-slide">
