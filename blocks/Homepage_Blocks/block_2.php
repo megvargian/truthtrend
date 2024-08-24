@@ -10,7 +10,7 @@ $posts = $block2_fields['posts'];
         <div class="row saperator_black"></div>
     </div>
 </section>
-<section class="pt-5 bg-custom-orange">
+<section class="bg-custom-orange">
     <div class="container">
         <div class="row">
             <div class="swiper FirstSwiperMobile">

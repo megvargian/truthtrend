@@ -26,7 +26,7 @@ $counter = 0;
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-12 text-right">
-                <h2 class="text-black mb-md-4 mb-2" style="font-size: 2rem">
+                <h2 class="mb-md-4 mb-2" style="font-size: 2rem">
                     <?php echo 'الأكثر قراءة'; ?>
                 </h2>
                 <ol class="order-list-recent-post">
@@ -36,7 +36,7 @@ $counter = 0;
                             $get_custom_feilds = get_fields(get_the_ID());
                     ?>
                         <li>
-                            <a class="mt-2 text-black a-h3" href="<?php echo get_permalink(get_the_ID()); ?>">
+                            <a class="mt-2 a-h3" href="<?php echo get_permalink(get_the_ID()); ?>">
                                 <?php echo get_the_title(get_the_ID());?>
                             </a>
                             <a class="mt-2 cat-text" href="<?php echo get_permalink($get_custom_feilds['author'] -> ID); ?>" style="font-size: 1rem; line-height: 4">

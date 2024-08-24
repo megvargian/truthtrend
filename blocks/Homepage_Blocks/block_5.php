@@ -5,7 +5,7 @@
 $block5_fields = get_fields();
 $post_custom_fields = get_fields($block5_fields['post'] -> ID);
 ?>
-<section>
+<section class="pb-0">
     <div class="container">
         <div class="row text-center pb-3 mb-2 pb-lg-5 mb-lg-4">
             <h2>ملف الأسبوع</h2>

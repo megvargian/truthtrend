@@ -4,7 +4,7 @@
  */
 $block1_fields = get_fields();
 ?>
-<section class="pt-0 pb-2 bg-custom-blue">
+<section class="py-4 bg-custom-blue">
     <div class="container">
         <div class="row">
             <div class="swiper firstSwiperDesktop">
