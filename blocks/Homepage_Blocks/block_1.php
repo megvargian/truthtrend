@@ -4,10 +4,10 @@
  */
 $block1_fields = get_fields();
 ?>
-<section class="py-4 bg-custom-blue">
+<section class="bg-custom-blue">
     <div class="container">
         <div class="row">
-            <div class="swiper firstSwiperDesktop">
+            <div class="swiper firstSwiperDesktop pb-0">
                 <div class="swiper-wrapper">
                     <?php
                     foreach ($block1_fields['main_posts'] as $main_post) {
