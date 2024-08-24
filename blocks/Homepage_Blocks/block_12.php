@@ -11,7 +11,7 @@ $tab_1_custom_fields = get_fields($tab_1['main_post'] -> ID);
         <div class="row text-center py-4">
             <h2 class="text-white"><?php echo $tab_1['title']; ?></h2>
         </div>
-        <div class="row mt-5 d-md-block d-none">
+        <div class="row mt-5 d-md-flex d-none">
             <div class="col-sm-6 col-12">
                 <?php if($tab_1_custom_fields['youtube_url']){ ?>
                     <div class="position-relative">
