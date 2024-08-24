@@ -157,8 +157,8 @@
     padding: 0px 30px;
   }
   .menu_on_mobile .page_font {
-    font-family: "lalezar-regular";
-    font-size: 22px;
+    font-family: "alexandria-regular";
+    font-size: 30px;
     margin-bottom: 10px;
   }
   .menu_on_mobile .search_icon {
@@ -167,7 +167,7 @@
     margin-top: 10px;
   }
   .menu_on_mobile .social_media {
-    font-family: "lalezar-regular";
+    font-family: "alexandria-regular";
     font-size: 18px;
     margin-bottom: 10px;
     display: inline-block;
@@ -206,7 +206,7 @@
     border-bottom: 2px solid black;
   }
   .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .page_font {
-    font-family: "lalezar-regular";
+    font-family: "alexandria-regular";
     font-size: 18px;
     color: #000;
   }
@@ -251,7 +251,7 @@
   .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .followUs-class .title {
     font-size: 10px;
     line-height: 12px;
-    font-family: "lalezar-regular";
+    font-family: "alexandria-regular";
     color: #000;
     text-align: center;
   }
@@ -382,7 +382,7 @@
     display: block;
   }
   #el_logo_mobile .dropdown-menu .menu_subtitle .menu_col_title {
-    font-family: "lalezar-regular";
+    font-family: "alexandria-regular";
     font-weight: bolder;
     font-size: 15px;
     line-height: 18px;
@@ -394,7 +394,7 @@
   }
   #el_logo_mobile .dropdown-menu .menu_subtitle .menu_col_inner_items .menu_item {
     display: block;
-    font-family: "lalezar-regular";
+    font-family: "alexandria-regular";
     font-size: 12px;
     line-height: 15px;
     color: #787CF0;
