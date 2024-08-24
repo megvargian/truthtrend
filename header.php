@@ -205,6 +205,9 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                     </div>
                                 </div>
                             <?php }} ?>
+                            <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center mb-2 mb-lg-5" target="_blank" style="font-size: 1rem;">
+                                <?php echo 'للدعم المالي' ?>
+                            </a>
                         </div>
                     </div>
                 </div>
