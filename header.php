@@ -109,6 +109,8 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                                                 </a>
                                                             </li>
                                                         <?php } ?>
+                                                    </ul>
+                                                    <ul class="sub-menu-list">
                                                         <?php
                                                             foreach($menu_item['sub_items'] as $sub_menu_items){ ?>
                                                             <li class="sub-menu-link">
@@ -205,7 +207,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                     </div>
                                 </div>
                             <?php }} ?>
-                            <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center mb-2 mb-lg-5" target="_blank">
+                            <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button text-white d-flex justify-content-center align-items-center mb-2 mb-lg-5" target="_blank">
                                 <?php echo 'للدعم المالي' ?>
                             </a>
                         </div>
