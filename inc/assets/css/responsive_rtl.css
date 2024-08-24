@@ -468,9 +468,6 @@
     height: 3.5rem;
   }
   .main_footer_section .first-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
     width: 100% !important;
   }
   .main_footer_section .first-section li a {

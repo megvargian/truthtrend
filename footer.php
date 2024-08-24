@@ -25,8 +25,8 @@ $footer_logo = $getGeneralFields['footer_logo'];
                 </a>
            </div>
            <div class="row py-4">
-                <div class="col-lg-3 col-12 pb-lg-0 pb-3">
-                    <ul class="fit-content first-section d-flex d-lg-block">
+                <div class="col-lg-3 col-4 text-right pb-lg-0 pb-3">
+                    <ul class="fit-content first-section d-block">
                         <?php foreach($footer_fields[0]['child_items'] as $items){ ?>
                             <li>
                                 <a href="<?php echo $items['url']; ?>">
@@ -36,8 +36,8 @@ $footer_logo = $getGeneralFields['footer_logo'];
                         <?php } ?>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-12 pb-lg-0 pb-3">
-                    <ul class="fit-content first-section d-flex d-lg-block">
+                <div class="col-lg-3 col-4 text-right pb-lg-0 pb-3">
+                    <ul class="fit-content first-section d-block">
                         <?php foreach($footer_fields[1]['child_items'] as $items){ ?>
                             <li>
                                 <a href="<?php echo $items['url']; ?>">
@@ -47,8 +47,8 @@ $footer_logo = $getGeneralFields['footer_logo'];
                         <?php } ?>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-12 pb-lg-0 pb-3">
-                    <ul class="fit-content first-section d-flex d-lg-block">
+                <div class="col-lg-3 col-4 text-right pb-lg-0 pb-3">
+                    <ul class="fit-content first-section d-block">
                         <?php foreach($footer_fields[2]['child_items'] as $items){ ?>
                             <li>
                                 <a href="<?php echo $items['url']; ?>">
