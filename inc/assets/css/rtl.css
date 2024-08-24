@@ -254,7 +254,7 @@ body.hide_scroll {
 }
 .header-container ul .menu-item-has-child .sub-full-menu .sub-div .sub-menu-list {
   display: grid;
-  grid-template-columns: repeat(4, auto); /* Two columns */
+  grid-template-columns: auto auto auto auto;
   grid-auto-rows: auto; /* Rows will auto-size based on content */
   gap: 10px; /* Optional: Space between columns */
   list-style-type: none; /* Remove bullet points */
