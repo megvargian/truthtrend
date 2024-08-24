@@ -79,21 +79,25 @@ $tab_1_custom_fields = get_fields($tab_1['main_post'] -> ID);
             <div class="col-12">
                 <div class="swiper mainSwiper">
                     <div class="swiper-wrapper">
+                        <?php
+                            $get_custom_field = get_fields($tab_1['main_post'] -> ID);
+                            $get_title = get_the_title($tab_1['main_post'] -> ID);
+                        ?>
                         <div class="swiper-slide">
-                            <?php if($tab_1_custom_fields['youtube_url']){ ?>
+                            <?php if($get_custom_field['youtube_url']){ ?>
                                 <div class="position-relative">
-                                    <a href="<?php echo $tab_1_custom_fields['youtube_url'] ?>">
-                                        <img class="w-100 h-100 d-none d-lg-block image-darker" src="<?php echo $tab_1_custom_fields['images']['desktop_image']; ?>" alt="<?php echo echo $tab_1['main_post'] -> post_title; ?>">
-                                        <img class="w-100 h-100 d-none d-sm-block d-lg-none image-darker" src="<?php echo $tab_1_custom_fields['images']['tablet_image']; ?>" alt="<?php echo echo $tab_1['main_post'] -> post_title; ?>">
-                                        <img class="w-100 h-100 d-block d-sm-none image-darker" src="<?php echo $tab_1_custom_fields['images']['mobile_image']; ?>" alt="<?php echo echo $tab_1['main_post'] -> post_title; ?>">
+                                    <a href="<?php echo $get_custom_field['youtube_url'] ?>">
+                                        <img class="w-100 h-100 d-none d-lg-block image-darker" src="<?php echo $get_custom_field['images']['desktop_image']; ?>" alt="<?php echo $get_title; ?>">
+                                        <img class="w-100 h-100 d-none d-sm-block d-lg-none image-darker" src="<?php echo $get_custom_field['images']['tablet_image']; ?>" alt="<?php echo $get_title; ?>">
+                                        <img class="w-100 h-100 d-block d-sm-none image-darker" src="<?php echo $get_custom_field['images']['mobile_image']; ?>" alt="<?php echo $get_title; ?>">
                                         <img class="play" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/play-48.ico" alt="play">
                                     </a>
                                 </div>
                             <?php } else{ ?>
-                                <a href="<?php echo get_permalink($tab_1['main_post'] -> ID); ?>">
-                                    <img class="w-100 h-100 main_image d-none d-lg-block" src="<?php echo $tab_1_custom_fields['images']['desktop_image']; ?>" alt="<?php echo echo $tab_1['main_post'] -> post_title; ?>">
-                                    <img class="w-100 h-100 main_image d-none d-sm-block d-lg-none" src="<?php echo $tab_1_custom_fields['images']['tablet_image']; ?>" alt="<?php echo echo $tab_1['main_post'] -> post_title; ?>">
-                                    <img class="w-100 h-100 main_image d-block d-sm-none" src="<?php echo $tab_1_custom_fields['images']['mobile_image']; ?>" alt="<?php echo echo $tab_1['main_post'] -> post_title; ?>">
+                                <a href="<?php echo get_permalink($post['post'] -> ID); ?>">
+                                    <img class="w-100 h-100 main_image d-none d-lg-block" src="<?php echo $get_custom_field['images']['desktop_image']; ?>" alt="<?php echo $get_title; ?>">
+                                    <img class="w-100 h-100 main_image d-none d-sm-block d-lg-none" src="<?php echo $get_custom_field['images']['tablet_image']; ?>" alt="<?php echo $get_title; ?>">
+                                    <img class="w-100 h-100 main_image d-block d-sm-none" src="<?php echo $get_custom_field['images']['mobile_image']; ?>" alt="<?php echo $get_title; ?>">
                                 </a>
                             <?php } ?>
                         </div>
