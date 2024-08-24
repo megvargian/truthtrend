@@ -166,6 +166,9 @@
     padding-bottom: 20px;
     margin-top: 10px;
   }
+  .menu_on_mobile .sub-menus-header li a {
+    font-size: 18px;
+  }
   .menu_on_mobile .social_media {
     font-family: "alexandria-regular";
     font-size: 18px;
