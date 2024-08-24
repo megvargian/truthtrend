@@ -8,8 +8,8 @@ $swiper_posts = $block8_fields['swiper_posts'];
 ?>
 <section class="bg-custom-yellow">
     <div class="container">
-        <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
-            <div class="col-12 d-flex justify-content-between align-items-center">
+        <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4 d-block d-lg-none">
+            <div class="col-12 d-flex justify-content-center align-items-center">
                 <div class="text-center">
                     <a href="<?php echo $block8_fields['sub_title_url']; ?>">
                         <h4><?php echo $block8_fields['sub_title']; ?></h4>
