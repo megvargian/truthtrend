@@ -719,12 +719,6 @@ section {
   font-family: "alexandria-regular";
   font-weight: 400;
 }
-.main_footer_section .first-section li:first-child {
-  margin-top: 0;
-}
-.main_footer_section .first-section li:last-child {
-  margin-bottom: 0;
-}
 .main_footer_section .second-section li {
   margin: 0 1rem;
   cursor: pointer;
