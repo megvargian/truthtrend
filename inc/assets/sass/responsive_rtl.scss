@@ -213,13 +213,6 @@
 			padding-bottom: 20px;
 			margin-top: 10px;
 		}
-		.sub-menus-header{
-			li{
-				a{
-					font-size: 18px;
-				}
-			}
-		}
 		.social_media{
 			font-family: $alexandria-regular;
 			font-size: 18px;
@@ -271,9 +264,16 @@
 				.active_page {
 					border-bottom: 2px solid black;
 				}
+				.sub-menus-header{
+					li{
+						a{
+							font-size: 18px;
+						}
+					}
+				}
 				.page_font{
 					font-family: $alexandria-regular;
-					font-size: 18px;
+					font-size: 30px;
 					color: #000;
 				}
 				.request-demo-font{

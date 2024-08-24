@@ -166,9 +166,6 @@
     padding-bottom: 20px;
     margin-top: 10px;
   }
-  .menu_on_mobile .sub-menus-header li a {
-    font-size: 18px;
-  }
   .menu_on_mobile .social_media {
     font-family: "alexandria-regular";
     font-size: 18px;
@@ -208,9 +205,12 @@
   .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .active_page {
     border-bottom: 2px solid black;
   }
+  .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .sub-menus-header li a {
+    font-size: 18px;
+  }
   .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .page_font {
     font-family: "alexandria-regular";
-    font-size: 18px;
+    font-size: 30px;
     color: #000;
   }
   .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .request-demo-font {
