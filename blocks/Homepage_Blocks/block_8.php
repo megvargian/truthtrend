@@ -12,7 +12,7 @@ $swiper_posts = $block8_fields['swiper_posts'];
             <div class="col-12 d-flex justify-content-center align-items-center">
                 <div class="text-center">
                     <a href="<?php echo $block8_fields['sub_title_url']; ?>">
-                        <h4><?php echo $block8_fields['sub_title']; ?></h4>
+                        <h2><?php echo $block8_fields['sub_title']; ?></h2>
                     </a>
                 </div>
             </div>
@@ -40,7 +40,7 @@ $swiper_posts = $block8_fields['swiper_posts'];
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
+        <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4 pt-lg-0 pt-4">
             <div class="col-12 d-flex justify-content-between align-items-center">
                 <div class="text-right d-lg-flex d-none">
                     <a href="<?php echo $block8_fields['sub_title_url']; ?>">
