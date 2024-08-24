@@ -100,7 +100,17 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                                         <h5><?php // echo $single_menu['sub_menu_section']['left_side_menu_label'] ?></h5>
                                                     </div> -->
                                                     <ul class="sub-menu-list">
-                                                        <?php foreach($menu_item['sub_items'] as $sub_menu_items){ ?>
+                                                        <?php
+                                                            $first_four_sub_items = array_splice($menu_item['sub_items'], 0, 4);
+                                                            foreach($first_four_sub_items as $sub_menu_items){ ?>
+                                                            <li class="sub-menu-link">
+                                                                <a href="<?php echo $sub_menu_items['sub_item_url']; ?>">
+                                                                    <?php echo $sub_menu_items['sub_item_text']; ?>
+                                                                </a>
+                                                            </li>
+                                                        <?php } ?>
+                                                        <?php
+                                                            foreach($$menu_item['sub_items'] as $sub_menu_items){ ?>
                                                             <li class="sub-menu-link">
                                                                 <a href="<?php echo $sub_menu_items['sub_item_url']; ?>">
                                                                     <?php echo $sub_menu_items['sub_item_text']; ?>
