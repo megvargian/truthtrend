@@ -671,17 +671,19 @@ section {
 .order-list-recent-post {
   list-style-type: decimal;
   margin-left: 10px;
+  padding-right: 20px;
 }
 .order-list-recent-post .a-h3 {
   font-size: 1.5rem !important;
 }
 .order-list-recent-post li::marker {
   color: #fff;
+  font-size: 2rem;
 }
-.order-list-recent-post li::marker a {
+.order-list-recent-post li a {
   font-size: 1.5rem;
 }
-.order-list-recent-post li::marker .cat-text {
+.order-list-recent-post li .cat-text {
   font-size: 1rem !important;
 }
 
