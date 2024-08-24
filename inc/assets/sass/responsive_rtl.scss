@@ -473,17 +473,10 @@
 		.first-section {
 			width: 100% !important;
 			li {
+				margin-top: 1rem;
 				a{
 					font-size: 1.5rem;
 				}
-			}
-			li:first-child{
-				margin-right: 0;
-				margin-top: auto;
-			}
-			li:last-child{
-				margin-left: 0;
-
 			}
 		}
 		.second-section{
