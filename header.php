@@ -110,7 +110,7 @@ $current_language = apply_filters('wpml_current_language', NULL);
                                                             </li>
                                                         <?php } ?>
                                                         <?php
-                                                            foreach($$menu_item['sub_items'] as $sub_menu_items){ ?>
+                                                            foreach($menu_item['sub_items'] as $sub_menu_items){ ?>
                                                             <li class="sub-menu-link">
                                                                 <a href="<?php echo $sub_menu_items['sub_item_url']; ?>">
                                                                     <?php echo $sub_menu_items['sub_item_text']; ?>
