@@ -521,7 +521,7 @@ section {
   border-radius: 30px;
   border: none;
   padding: 0.5rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .second_button {
@@ -1063,4 +1063,42 @@ section {
   margin-right: 15px;
   rotate: -12deg;
   left: 30%;
+}
+
+.bg-custom-blue {
+  background-color: #787CF0;
+}
+
+.bg-custom-orange {
+  background-color: #FE9696;
+}
+
+.bg-custom-yellow {
+  background-color: #F7E587;
+}
+
+.bg-custom-ligh-orange {
+  background-color: #F7AC87;
+}
+
+.bg-custom-blue h1, .bg-custom-orange h1, .bg-custom-yellow h1, .bg-custom-ligh-orange h1 {
+  color: #fff;
+}
+.bg-custom-blue h2, .bg-custom-orange h2, .bg-custom-yellow h2, .bg-custom-ligh-orange h2 {
+  color: #fff;
+}
+.bg-custom-blue h3, .bg-custom-orange h3, .bg-custom-yellow h3, .bg-custom-ligh-orange h3 {
+  color: #fff;
+}
+.bg-custom-blue h4, .bg-custom-orange h4, .bg-custom-yellow h4, .bg-custom-ligh-orange h4 {
+  color: #fff;
+}
+.bg-custom-blue h5, .bg-custom-orange h5, .bg-custom-yellow h5, .bg-custom-ligh-orange h5 {
+  color: #fff;
+}
+.bg-custom-blue p, .bg-custom-orange p, .bg-custom-yellow p, .bg-custom-ligh-orange p {
+  color: #fff;
+}
+.bg-custom-blue a, .bg-custom-orange a, .bg-custom-yellow a, .bg-custom-ligh-orange a {
+  color: #fff;
 }

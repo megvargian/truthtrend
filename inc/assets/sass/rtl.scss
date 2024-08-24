@@ -1025,3 +1025,40 @@ section{
     rotate: -12deg;
     left: 30%;
 }
+
+.bg-custom-blue{
+	background-color: #787CF0;
+}
+.bg-custom-orange{
+	background-color: #FE9696;
+}
+.bg-custom-yellow{
+	background-color: #F7E587;
+}
+.bg-custom-ligh-orange{
+	background-color: #F7AC87;
+}
+
+.bg-custom-blue, .bg-custom-orange, .bg-custom-yellow, .bg-custom-ligh-orange{
+	h1{
+		color: #fff;
+	}
+	h2{
+		color: #fff;
+	}
+	h3{
+		color: #fff;
+	}
+	h4{
+		color: #fff;
+	}
+	h5{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+	}
+	a{
+		color: #fff;
+	}
+}

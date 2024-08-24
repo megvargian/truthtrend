@@ -5,12 +5,12 @@
 $block2_fields = get_fields();
 $posts = $block2_fields['posts'];
 ?>
-<section class="py-0 d-none d-lg-block">
+<section class="py-0 d-none d-lg-block bg-custom-orange">
     <div class="container">
         <div class="row saperator_black"></div>
     </div>
 </section>
-<section class="pt-5">
+<section class="pt-5 bg-custom-orange">
     <div class="container">
         <div class="row">
             <div class="swiper FirstSwiperMobile">

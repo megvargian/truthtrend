@@ -22,7 +22,7 @@ $second_args = array(
 $query = new WP_Query($second_args);
 $counter = 0;
 ?>
-<section>
+<section class="bg-custom-blue">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-12 text-right">
