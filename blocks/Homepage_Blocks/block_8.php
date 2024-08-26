@@ -40,6 +40,7 @@ $swiper_posts = $block8_fields['swiper_posts'];
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+        <div class="row saperator_black d-block d-lg-none py-2"></div>
         <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4 pt-lg-0 pt-4">
             <div class="col-12 d-flex justify-content-between align-items-center">
                 <div class="text-right d-lg-flex d-none">
