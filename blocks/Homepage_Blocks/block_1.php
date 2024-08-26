@@ -4,7 +4,7 @@
  */
 $block1_fields = get_fields();
 ?>
-<section class="bg-custom-blue">
+<section class="">
     <div class="container">
         <div class="row">
             <div class="swiper firstSwiperDesktop pb-0">

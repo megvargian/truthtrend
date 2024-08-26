@@ -6,7 +6,7 @@ $block8_fields = get_fields();
 $posts = $block8_fields['posts'];
 $swiper_posts = $block8_fields['swiper_posts'];
 ?>
-<section class="bg-custom-yellow">
+<section class="">
     <div class="container">
         <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4 d-block d-lg-none">
             <div class="col-12 d-flex justify-content-center align-items-center">

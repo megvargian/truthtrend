@@ -41,41 +41,41 @@
 }
 @media (max-width: 991px) {
   h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
     font-size: 2rem;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
   h4 {
-    font-size: 1.7rem;
-  }
-  h5 {
-    font-size: 1.3rem;
-  }
-  p {
     font-size: 1rem;
   }
+  h5 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
   section {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
   }
   a {
     font-size: 1rem;
   }
   .a-h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .main_button {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
   .subscription_form input {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .second_button {
     margin-right: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .mobile_view h2 {
     position: absolute;
@@ -541,16 +541,16 @@
 }
 @media (max-width: 575px) {
   h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
     font-size: 1.5rem;
   }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
   h4 {
-    font-size: 1.35rem;
+    font-size: 1rem;
   }
   h5 {
     font-size: 1rem;
@@ -562,10 +562,10 @@
     font-size: 0.8rem;
   }
   .a-h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   section {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
   .main_button {
     font-size: 0.9rem;
@@ -596,10 +596,10 @@
     margin: 0rem 1.5rem;
   }
   .about-us h1 {
-    font-size: 25px;
+    font-size: 17px;
   }
   .about-us p {
-    font-size: 17px;
+    font-size: 12px;
   }
   .order-list-recent-post {
     padding-right: 30px;

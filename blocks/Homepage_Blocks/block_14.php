@@ -5,7 +5,7 @@
 $block14_fields = get_fields();
 $posts = $block14_fields['posts'];
 ?>
-<section class="bg-custom-ligh-orange">
+<section class="">
     <div class="container">
         <div class="row pb-3 mb-2 pb-lg-5 mb-lg-4">
             <div class="col-12 d-flex justify-content-center align-items-center position-relative">
