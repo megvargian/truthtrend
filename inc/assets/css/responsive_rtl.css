@@ -497,6 +497,10 @@
     margin: 15px;
     padding: 15px;
   }
+  .cup {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 @media (max-width: 767px) {
   .inner-post .inner-author {
@@ -604,6 +608,11 @@
   }
   .order-list-recent-post {
     padding-right: 30px;
+  }
+  .cup {
+    width: 3rem;
+    height: 3rem;
+    left: 35%;
   }
 }
 @media (max-width: 500px) {

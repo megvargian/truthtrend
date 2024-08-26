@@ -12,7 +12,7 @@ $posts = $block14_fields['posts'];
                 <a href="<?=$block14_fields['title_url'] ?>">
                     <h2 class="text-center"><?php echo $block14_fields['title'] ?></h2>
                 </a>
-                <img class="cup d-md-flex d-none" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/cup.png" alt="cup">
+                <img class="cup" src="<?php echo get_template_directory_uri(); ?>/inc/assets/images/cup.png" alt="cup">
             </div>
         </div>
         <div class="row d-none d-lg-flex">

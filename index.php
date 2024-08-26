@@ -74,7 +74,7 @@ get_header();
             }
         });
         var swiper = new Swiper(".FirstSwiperMobile", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
             pagination: {
@@ -95,7 +95,7 @@ get_header();
                 },
                 // when window width is >= 640px
                 640: {
-                slidesPerView: 4,
+                slidesPerView: 2,
                 spaceBetween: 20
                 }
             }
