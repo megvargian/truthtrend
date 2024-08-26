@@ -184,6 +184,8 @@ body.hide_scroll{
 				background-color: transparent;
 				border: none;
 				outline: none;
+				font-size: 1rem;
+				font-weight: 700;
 			}
 			.sub-full-menu{
 				visibility: hidden;
@@ -460,7 +462,7 @@ a{
 	display: block;
 }
 header{
-	a {
+	a, button {
 		font-size: 1rem;
 		font-family: $alexandria-regular;
 	}
@@ -657,7 +659,7 @@ section{
 			margin: 1rem 0;
 			cursor: pointer;
 			a{
-				font-size: 2rem;
+				font-size: 1rem;
 				color: #fff;
 				font-family: $alexandria-regular;
 				font-weight: 400;
@@ -669,7 +671,7 @@ section{
 			margin: 0 1rem;
 			cursor: pointer;
 			a{
-				font-size: 2rem;
+				font-size: 1rem;
 				color: #fff;
 				font-family: $alexandria-regular;
 				font-weight: 400;
@@ -685,7 +687,7 @@ section{
 	.subscription{
 		margin: 1rem 0;
 		h5{
-			font-size: 3rem;
+			font-size: 1.2rem;
 		}
 		.main_button{
 			margin-top: 1rem;

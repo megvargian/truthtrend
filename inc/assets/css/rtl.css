@@ -238,6 +238,8 @@ body.hide_scroll {
   background-color: transparent;
   border: none;
   outline: none;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .header-container ul .menu-item-has-child .sub-full-menu {
   visibility: hidden;
@@ -503,7 +505,7 @@ a {
   display: block;
 }
 
-header a {
+header a, header button {
   font-size: 1rem;
   font-family: "alexandria-regular";
 }
@@ -714,7 +716,7 @@ section {
   cursor: pointer;
 }
 .main_footer_section .first-section li a {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #fff;
   font-family: "alexandria-regular";
   font-weight: 400;
@@ -724,7 +726,7 @@ section {
   cursor: pointer;
 }
 .main_footer_section .second-section li a {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #fff;
   font-family: "alexandria-regular";
   font-weight: 400;
@@ -739,7 +741,7 @@ section {
   margin: 1rem 0;
 }
 .main_footer_section .subscription h5 {
-  font-size: 3rem;
+  font-size: 1.2rem;
 }
 .main_footer_section .subscription .main_button {
   margin-top: 1rem;
