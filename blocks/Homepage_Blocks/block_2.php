@@ -5,7 +5,7 @@
 $block2_fields = get_fields();
 $posts = $block2_fields['posts'];
 ?>
-<section class="py-0 d-none d-lg-block">
+<section class="py-lg-0 py-2">
     <div class="container">
         <div class="row saperator_black"></div>
     </div>
