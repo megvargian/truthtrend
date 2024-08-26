@@ -677,9 +677,10 @@ section {
 }
 .order-list-recent-post .a-h3 {
   font-size: 1.5rem !important;
+  color: #000;
 }
 .order-list-recent-post li::marker {
-  color: #fff;
+  color: #787CF0;
   font-size: 2rem;
 }
 .order-list-recent-post li a {
