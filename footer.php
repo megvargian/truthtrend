@@ -59,7 +59,7 @@ $footer_logo = $getGeneralFields['footer_logo'];
                     </ul>
                 </div>
                 <div class="col-lg-3 col-12 pb-lg-0 pb-3">
-                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center mb-2 mb-lg-5" target="_blank">
+                    <a href="<?php echo 'https://truthtrend.me/' ?>" class="main_button d-flex justify-content-center align-items-center mb-2 mb-lg-2" target="_blank">
                         <?php echo 'للدعم المالي' ?>
                     </a>
                     <ul class="d-flex justify-content-start align-content-start second-section pt-2 pt-lg-5">

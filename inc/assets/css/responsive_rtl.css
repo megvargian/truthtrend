@@ -210,8 +210,9 @@
   }
   .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .page_font {
     font-family: "alexandria-regular";
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
+    font-weight: 400;
   }
   .menu_on_mobile .menu_on_mobile_wrapper .menu_on_mobile_inner_wrapper .request-demo-font {
     background: #889592;
