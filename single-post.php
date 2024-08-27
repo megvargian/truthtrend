@@ -87,8 +87,17 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                                 $post_content = get_the_content();
                                 $post_content = strip_shortcodes($post_content);
                                 $text_content = strip_tags($post_content);
-                                echo do_shortcode('[responsivevoice voice="Arabic Female" buttontext="Play Audio"]' . $text_content . '[/responsivevoice]');
                             ?>
+                            <button id="bb1" type="button" value="Play" class="responsivevoice-button" title="ResponsiveVoice Tap to Start/Stop Speech"><span>🔊 Play Audio</span></button>
+                            <script>
+                                bb1.onclick = function(){
+                                    if(responsiveVoice.isPlaying()){
+                                        responsiveVoice.cancel();
+                                    }else{
+                                        responsiveVoice.speak("<?php echo $text_content; ?>", "Arabic Female");
+                                    }
+                                };
+                            </script>
                         </div>
                         <div class="row pb-3">
                             <div class="col-10">
