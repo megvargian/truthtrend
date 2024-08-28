@@ -95,6 +95,10 @@ get_header();
                 },
                 // when window width is >= 640px
                 640: {
+                slidesPerView: 3,
+                spaceBetween: 20
+                }
+                991: {
                 slidesPerView: 4,
                 spaceBetween: 20
                 }
