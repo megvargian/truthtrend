@@ -97,7 +97,7 @@ get_header();
                 640: {
                 slidesPerView: 3,
                 spaceBetween: 20
-                }
+                },
                 991: {
                 slidesPerView: 4,
                 spaceBetween: 20
