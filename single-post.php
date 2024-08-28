@@ -87,7 +87,7 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                                 $post_content = get_the_content();
                                 $post_content = strip_shortcodes($post_content);
                                 $text_content = strip_tags($post_content);
-                                echo do_shortcode('[responsivevoice voice="Arabic Female" buttontext="Play Audio" text="' . $text_content . '"]', true);
+                                echo do_shortcode('[responsivevoice voice="Arabic Female" buttontext="Play Audio" text="' . $text_content . '"][/responsivevoice]', true);
                             ?>
                         </div>
                         <div class="row pb-3">
