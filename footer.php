@@ -126,6 +126,5 @@ $footer_logo = $getGeneralFields['footer_logo'];
     });
 </script>
 <?php wp_footer(); ?>
-<script src="https://code.responsivevoice.org/responsivevoice.js?key=qwdMid8m"></script>
 </body>
 </html>
