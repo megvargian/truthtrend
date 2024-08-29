@@ -1131,5 +1131,5 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.9));
 }

@@ -35,7 +35,9 @@ $post_custom_fields = get_fields($block5_fields['post'] -> ID);
         <div class="row gx-0">
             <div class="position-relative cusotm-header-position">
                 <div class="middle-section">
-                    <h2 class="pb-3"><?php echo $block5_fields['post'] -> post_title; ?></h2>
+                    <a href="<?php echo get_permalink($block5_fields['post'] -> ID ); ?>">
+                        <h2 class="pb-3"><?php echo $block5_fields['post'] -> post_title; ?></h2>
+                    </a>
                     <a href="<?php echo get_permalink($post_custom_fields['author'] -> ID); ?>">
                         <?php echo get_the_title($post_custom_fields['author'] -> ID); ?>
                     </a>
