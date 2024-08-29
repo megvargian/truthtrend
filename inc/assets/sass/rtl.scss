@@ -1077,4 +1077,21 @@ section{
 		border-radius: 0;
 		height: auto !important;
 	}
+	.cusotm-header-position{
+		position: relative;
+		display: inline-block; /* Adjust as needed */
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.cusotm-header-position::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+	  }
 }
