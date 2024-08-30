@@ -1063,11 +1063,11 @@ section {
 
 .cup {
   position: absolute;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   margin-right: 15px;
   rotate: -12deg;
-  left: 30%;
+  left: 38%;
 }
 
 .bg-custom-blue {
