@@ -17,6 +17,13 @@ $company_main_fields = get_fields();
 			<?php the_content(); ?>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row py-2 text-right">
+			<a href="mailto:info@truthtrend.me" class="main_button" target="_blank">
+				<?php echo 'تواصلوا معنا الآن'; ?>
+			</a>
+		</div>
+	</div>
 </section>
 <script>
     jQuery(document).ready(function($) {
