@@ -21,13 +21,13 @@
     <?php wp_head(); ?>
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8QE119KTK"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XLNX0E8YTL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-Q8QE119KTK');
+  gtag('config', 'G-XLNX0E8YTL');
 </script>
 <body <?php body_class(); ?>>
 <?php
