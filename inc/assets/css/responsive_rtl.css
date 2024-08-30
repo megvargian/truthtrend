@@ -501,7 +501,7 @@
     width: 6rem;
     height: 6rem;
   }
-  .header-container ul li:last-child() {
+  .header-container ul li:last-child .header-container ul li:last-child {
     margin-left: 1.5rem;
   }
 }
