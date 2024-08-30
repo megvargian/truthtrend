@@ -19,7 +19,7 @@ $company_main_fields = get_fields();
 	</div>
 	<div class="container">
 		<div class="row py-2 text-right">
-			<a href="mailto:info@truthtrend.me" class="main_button" target="_blank">
+			<a href="mailto:info@truthtrend.me" class="main_button" style="width: fit-content;" target="_blank">
 				<?php echo 'تواصلوا معنا الآن'; ?>
 			</a>
 		</div>
