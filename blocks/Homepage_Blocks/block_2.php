@@ -22,7 +22,7 @@ $posts = $block2_fields['posts'];
                     <div class="swiper-slide">
                         <div>
                             <a href="<?php echo get_permalink($post['post'] -> ID) ?>">
-                                <h5 class="mb-3"><?php echo $post['post'] -> post_title ?></h5>
+                                <h5 class="mb-3" style="line-height: 1.5;"><?php echo $post['post'] -> post_title ?></h5>
                             </a>
                             <a href="<?php echo get_permalink($post_custom_fields['author'] -> ID); ?>">
                                 <?php echo get_the_title($post_custom_fields['author'] -> ID); ?>
