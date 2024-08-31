@@ -45,16 +45,10 @@ $current_language = apply_filters('wpml_current_language', NULL);
 <div id="page" class="site main_page_wrapper">
     <div class="modal fade" id="search" tabindex="-1" aria-labelledby="searchLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close m-0 remove-border-onFocus" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+            <div class="modal-content" style="background-color: transparent;">
                 <form action="/<?php echo $current_language == 'ar' ? '' : $current_language; ?>" method="post">
-                    <div class="modal-body">
-                        <input type="text" style="border: 1px solid black; border-radius: 30px; text-align: <?php echo ($current_language == 'en') ? 'left' : 'right';?>" class="w-100" placeholder="Search" required name="s">
-                    </div>
-                    <div class="modal-footer text-center d-flex justify-content-center">
-                        <button type="submit" class="main_button">Search</button>
+                    <div class="modal-body" style="border-radius: 30px;">
+                        <input type="text" class="mb-0 w-100" style="border: 1px solid black; border-radius: 30px; text-align: <?php echo ($current_language == 'en') ? 'left' : 'right';?>" placeholder="Search" required name="s">
                     </div>
                 </form>
             </div>
