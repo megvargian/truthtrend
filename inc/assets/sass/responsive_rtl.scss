@@ -520,6 +520,9 @@
 			}
 		}
 	}
+	.add-border-radius{
+		height: 500px;
+	}
 }
 @media (max-width: 767px){
 	.inner-post {
@@ -668,6 +671,9 @@
 		width: 3rem;
  		height: 3rem;
 		left: 31%;
+	}
+	.add-border-radius{
+		height: 400px;
 	}
 }
 @media (max-width: 500px) {
