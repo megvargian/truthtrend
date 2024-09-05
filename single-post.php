@@ -160,7 +160,7 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                         ?>
                     </ol>
                     <?php if($current_author_id != 0){ ?>
-                        <div class="pb-3 saperator_black"></div>
+                        <div class="pb-3"></div>
                         <h5 class="py-3">
                             <?php echo 'اقرأوا المزيد من المقالات لهذا الكاتب'; ?>
                         </h5>
