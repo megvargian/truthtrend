@@ -11,12 +11,11 @@ get_header();
 $current_author_id = 0;
 $get_current_post_category = get_the_category(get_the_ID());
 $args = array(
-    'post_type'      => 'post',
-    'posts_per_page' =>  5,
-    'meta_key'       => 'post_views_count',
-    'order'          => 'DESC',
-    'post_status'    => 'publish',
-    'orderby'        => 'meta_value_num',
+    'post_type' => 'post',
+    'posts_per_page' => 5,
+    'meta_key'  => 'post_views_count',
+    'orderby'   => 'meta_value_num',
+    'order' => 'DESC',
 );
 $query = new WP_Query($args);
 $count = 0;
@@ -143,15 +142,15 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                                     ):
                                     $count++;
                          ?>
-                            <li>
+                            <li class="pb-2">
                                 <a class="mt-2 text-black a-h3" href="<?php echo get_permalink( get_the_ID()); ?>">
                                     <?php the_title(); ?>
                                 </a>
-                                <?php if($post_custom_fields['author'] -> ID != null){ ?>
-                                    <a class="mt-2" href="<?php echo get_permalink($post_custom_fields['author'] -> ID) ?>" style="font-size: 1rem;">
-                                        <?php echo get_the_title($post_custom_fields['author'] -> ID); ?>
-                                    </a>
-                                <?php } ?>
+                                <?php //if($post_custom_fields['author'] -> ID != null){ ?>
+                                    <!-- <a class="mt-2" href="<?php //echo get_permalink($post_custom_fields['author'] -> ID) ?>" style="font-size: 1rem;">
+                                        <?php //echo get_the_title($post_custom_fields['author'] -> ID); ?>
+                                    </a> -->
+                                <?php //} ?>
                             </li>
                         <?php
                                     endif;

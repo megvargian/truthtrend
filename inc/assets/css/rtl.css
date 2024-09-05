@@ -501,7 +501,7 @@ a {
   color: #fff;
   font-family: "alexandria-regular";
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
 }
 
@@ -667,7 +667,10 @@ section {
 }
 #order-list-podcast li::marker {
   color: #787CF0;
-  font-size: 4rem;
+  font-size: 2rem;
+}
+#order-list-podcast li {
+  border-bottom: 1px solid black;
 }
 
 .order-list-recent-post {
