@@ -144,7 +144,7 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                          ?>
                             <li class="pb-2">
                                 <a class="mt-2 text-black a-h3" href="<?php echo get_permalink( get_the_ID()); ?>">
-                                    <?php the_title(); ?>
+                                    <h5><?php the_title(); ?></h5>
                                 </a>
                                 <?php //if($post_custom_fields['author'] -> ID != null){ ?>
                                     <!-- <a class="mt-2" href="<?php //echo get_permalink($post_custom_fields['author'] -> ID) ?>" style="font-size: 1rem;">
