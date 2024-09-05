@@ -453,6 +453,7 @@ h1 {
   font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 h2 {
@@ -460,6 +461,7 @@ h2 {
   font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 1.7rem;
+  line-height: 1.5;
 }
 
 h3 {
@@ -467,6 +469,7 @@ h3 {
   font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 h4 {
@@ -474,6 +477,7 @@ h4 {
   font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 1.35rem;
+  line-height: 1.5;
 }
 
 h5 {
@@ -481,6 +485,7 @@ h5 {
   font-family: "alexandria-regular";
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 p {
@@ -503,7 +508,7 @@ a {
   font-weight: 400;
   font-size: 1rem;
   display: block;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 header a, header button {
