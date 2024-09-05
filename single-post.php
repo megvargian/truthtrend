@@ -63,7 +63,7 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                             </div>
                         </div>
                         <div class="row py-5 pb-3 mt-2">
-                            <h1><?php the_title();?></h1>
+                            <h1 class="lh-base"><?php the_title();?></h1>
                         </div>
                         <div class="row pb-3">
                             <a class="text-black" href="<?php echo get_category_link($get_current_post_category[0] -> term_id); ?>">
