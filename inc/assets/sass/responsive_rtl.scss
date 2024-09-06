@@ -667,7 +667,12 @@
 	.order-list-recent-post{
 		padding-right: 30px;
 		li::marker{
-			font-size: 1rem;
+			font-size: 1.5rem;
+		}
+	}
+	#order-list-podcast{
+		li::marker{
+			font-size: 1.5rem;
 		}
 	}
 	.cup{

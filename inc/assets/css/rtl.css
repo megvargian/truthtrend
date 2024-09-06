@@ -670,7 +670,7 @@ section {
 }
 
 #order-list-podcast {
-  list-style-type: decimal;
+  list-style-type: arabic-indic;
   margin-left: 10px;
 }
 #order-list-podcast li::marker {
