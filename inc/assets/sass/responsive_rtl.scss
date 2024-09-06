@@ -666,6 +666,9 @@
 	}
 	.order-list-recent-post{
 		padding-right: 30px;
+		li::marker{
+			font-size: 1rem;
+		}
 	}
 	.cup{
 		width: 3rem;

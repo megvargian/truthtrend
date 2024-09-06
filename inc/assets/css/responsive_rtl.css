@@ -615,6 +615,9 @@
   .order-list-recent-post {
     padding-right: 30px;
   }
+  .order-list-recent-post li::marker {
+    font-size: 1rem;
+  }
   .cup {
     width: 3rem;
     height: 3rem;
