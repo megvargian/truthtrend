@@ -29,7 +29,7 @@ $counter = 0;
                 <h2 class="mb-md-4 mb-2" style="font-size: 2rem">
                     <?php echo 'الأكثر قراءة'; ?>
                 </h2>
-                <ul>
+                <ol class="order-list-recent-post">
                     <?php if ($most_viewed_query->have_posts()) {
                         while ($most_viewed_query->have_posts()) {
                             $most_viewed_query->the_post();
@@ -44,7 +44,7 @@ $counter = 0;
                             </a>
                         </li>
                     <?php } } ?>
-                </ul>
+                </ol>
             </div>
             <div class="col-md-3 col-12">
                 <ul>
