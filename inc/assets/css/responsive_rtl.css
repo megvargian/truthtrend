@@ -616,10 +616,10 @@
     padding-right: 30px;
   }
   .order-list-recent-post li::marker {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   #order-list-podcast li::marker {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   .cup {
     width: 3rem;
