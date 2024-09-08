@@ -886,8 +886,6 @@ section {
 .single-post-page .tags a {
   background-color: transparent;
   padding: 0.5rem 2rem;
-  border: 1px solid #787CF0;
-  border-radius: 23px;
 }
 .single-post-page .single-post-subscriptions input[type=email] {
   border-radius: 25px;
