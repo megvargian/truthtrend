@@ -117,7 +117,7 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                 ?>
                 <div class="row tags pt-4 pb-mt-0 pb-4">
                     <?php  foreach($tags as $tag){ ?>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 mt-5">
+                        <div class="col-xl-4 col-6 mt-5">
                             <a href="<?php echo get_tag_link($tag -> term_id); ?>">
                                 <?php echo $tag -> name ?>
                             </a>
@@ -159,18 +159,18 @@ $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
                             endif;
                         ?>
                     </ol>
-                    <?php if($current_author_id != 0){ ?>
-                        <div class="pb-3"></div>
+                    <?php //if($current_author_id != 0){ ?>
+                        <!-- <div class="pb-3"></div>
                         <h5 class="py-3">
-                            <?php echo 'اقرأوا المزيد من المقالات لهذا الكاتب'; ?>
+                            <?php //echo 'اقرأوا المزيد من المقالات لهذا الكاتب'; ?>
                         </h5>
                         <div class="current_author">
-                            <?php echo get_the_post_thumbnail($current_author_id); ?>
-                            <a href="<?php echo get_permalink($current_author_id); ?>">
-                                <?php echo get_the_title($current_author_id); ?>
+                            <?php //echo get_the_post_thumbnail($current_author_id); ?>
+                            <a href="<?php //echo get_permalink($current_author_id); ?>">
+                                <?php //echo get_the_title($current_author_id); ?>
                             </a>
-                        </div>
-                    <?php } ?>
+                        </div> -->
+                    <?php // } ?>
                 </div>
             </div>
         </div>
